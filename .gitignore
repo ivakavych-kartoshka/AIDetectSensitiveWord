@@ -1,0 +1,29 @@
+.venv/
+
+__pycache__/
+*.pyc
+
+.vscode/
+
+models/
+
+dataset/raw/
+
+*.log
+
+.env
+
+# AI Models
+models/
+
+
+# Dataset
+dataset/raw/*
+dataset/clean/*
+
+!dataset/raw/.gitkeep
+!dataset/clean/.gitkeep
+
+
+# HuggingFace cache
+.cache/

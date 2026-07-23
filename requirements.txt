@@ -1,0 +1,45 @@
+# ==================== CORE ML & TRANSFORMERS ====================
+torch
+torchvision
+torchaudio
+transformers==4.41.2
+accelerate==0.30.1
+peft==0.11.1                    # Hỗ trợ LoRA sau này
+evaluate==0.4.1
+
+# ==================== TOKENIZATION ====================
+sentencepiece
+tiktoken
+protobuf==4.25.3
+
+# ==================== FASTAPI & API ====================
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+# slowapi                         # Rate Limiting
+httpx                           # Test API
+python-dotenv
+
+# ==================== DATA & PROCESSING ====================
+pandas
+numpy
+scikit-learn
+
+# ==================== UTILITIES & MONITORING ====================
+psutil                          # Monitor CPU/GPU
+watchdog                        # Auto reload (dev)
+loguru                          # Logging đẹp hơn
+
+# ==================== DEVELOPMENT & TESTING ====================
+jupyter
+ipykernel
+wandb
+gradio                          # Test UI nhanh
+pytest
+httpx
+
+# ==================== OPTIONAL (có thể thêm sau) ====================
+# matplotlib
+# tqdm
+# datasets==2.20.0

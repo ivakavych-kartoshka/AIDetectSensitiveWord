@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Forum Demo</title>
+
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="post-box">
+        <h2>Tạo bài viết</h2>
+
+        <textarea id="content" placeholder="Bạn đang nghĩ gì?"></textarea>
+
+        <div class="bottom">
+          <span id="status"></span>
+
+          <button onclick="createPost()">Đăng bài</button>
+        </div>
+      </div>
+
+      <div id="posts"></div>
+    </div>
+
+    <script>
+      async function createPost() {
+        const text = document.getElementById("content").value.trim();
+
+        if (text === "") {
+          alert("Vui lòng nhập nội dung.");
+
+          return;
+        }
+
+        const response = await fetch("/analyze", {
+          method: "POST",
+
+          headers: {
+            "Content-Type": "application/json",
+          },
+
+          body: JSON.stringify({
+            text: text,
+          }),
+        });
+
+        const data = await response.json();
+
+        console.log(data);
+
+        if (data.score > 0.3) {
+          alert("🚫 Bạn không thể đăng bài vì chứa từ ngữ nhạy cảm.");
+
+          return;
+        }
+
+        const post = document.createElement("div");
+
+        post.className = "post";
+
+        post.innerHTML = `
+        <h3>Người dùng</h3>
+        <p>${text}</p>
+    `;
+
+        document.getElementById("posts").prepend(post);
+
+        document.getElementById("content").value = "";
+
+        alert("✅ Đăng bài thành công.");
+      }
+    </script>
+  </body>
+</html>

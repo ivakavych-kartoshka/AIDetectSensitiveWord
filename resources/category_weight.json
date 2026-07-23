@@ -1,0 +1,18 @@
+{
+  "sexual": 0.95,
+  "violence": 0.9,
+  "terrorism": 1.0,
+  "self_harm": 0.9,
+  "threat": 0.9,
+  "weapon": 0.8,
+  "hate_speech": 0.9,
+  "racism": 0.9,
+  "crime": 0.8,
+  "drugs": 0.8,
+  "scam": 0.85,
+  "gambling": 0.6,
+  "religion": 0.5,
+  "politics": 0.4,
+  "profanity_vi": 0.65,
+  "profanity_en": 0.65
+}

@@ -1,0 +1,24 @@
+{
+  "vi": [
+    "con chó nhà tôi",
+    "giết process",
+    "kill process",
+    "machine learning",
+    "deep learning",
+    "database",
+    "api",
+    "docker",
+    "kubernetes"
+  ],
+
+  "en": [
+    "kill process",
+    "thread killer",
+    "memory leak",
+    "bug",
+    "computer vision",
+    "machine learning",
+    "deep learning",
+    "artificial intelligence"
+  ]
+}

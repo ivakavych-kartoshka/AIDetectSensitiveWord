@@ -1,0 +1,23 @@
+{
+  "vi": [
+    "dao",
+    "kiếm",
+    "súng",
+    "bom",
+    "lựu đạn",
+    "mìn",
+    "súng ngắn",
+    "súng trường"
+  ],
+
+  "en": [
+    "weapon",
+    "knife",
+    "gun",
+    "rifle",
+    "pistol",
+    "grenade",
+    "bomb",
+    "explosive"
+  ]
+}
