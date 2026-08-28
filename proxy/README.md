@@ -17,10 +17,13 @@ PROXY (port 3002)
         ▼
 Gọi SensitiveAI /analyze (port 8000)
         ▼
-Quyết định
- ├─ BLOCK  ──► Trả lỗi 400, KHÔNG ghi DB
- ├─ REVIEW ──► Trả 202 cần xem xét, KHÔNG ghi DB
- └─ ALLOW  ──► Forward xuống BE để lưu DB
+Tính điểm (score 0..1)
+ ├─ score ≥ 0.8      (BLOCK)  ──► Trả lỗi 400, KHÔNG ghi DB
+ ├─ 0.3 ≤ score < 0.8 (REVIEW) ──► Forward xuống BE kèm moderation {status:"PENDING"}
+ │                                  → BE lưu bài, status = PENDING (chưa hiển thị công khai)
+ │                                  → Admin duyệt: Approve → APPROVED (hiển thị) / Reject → REJECTED (trash)
+ └─ score < 0.3      (ALLOW)  ──► Forward xuống BE kèm moderation {status:"APPROVED"}
+                                    → BE lưu bài, status = APPROVED (hiển thị ngay)
         ▼
 BACKEND NestJS (port 3000)
 ```
@@ -94,15 +97,19 @@ Header `Authorization: Bearer <token>` vẫn được chuyển tiếp nên auth 
 }
 ```
 
-**REVIEW (HTTP 202):**
+**Forward thành công (theo score):**
+- `score < 0.3` → proxy gắn `moderation.status = "APPROVED"` → bài hiển thị ngay, không cần admin.
+- `0.3 ≤ score < 0.8` → proxy gắn `moderation.status = "PENDING"` → BE lưu bài (chưa hiển thị), admin duyệt sau.
+
 ```json
+// body gửi xuống BE
 {
-  "success": false,
-  "need_review": true,
-  "message": "Nội dung cần quản trị viên xem xét. Chưa được đăng tự động.",
-  "moderation": { "decision": "review", ... }
+  "title": "...",
+  "content": "...",
+  "moderation": { "status": "PENDING", "score": 0.55, "categories": ["insult"] }
 }
 ```
+BE chỉ lưu các status `PENDING` / `APPROVED` / `REJECTED` (không có `ALLOW`).
 
 ## Lưu ý
 

@@ -7,6 +7,13 @@ const AI_URL = process.env.AI_URL || 'http://127.0.0.1:8000';
 const AI_ANALYZE_PATH = process.env.AI_ANALYZE_PATH || '/analyze';
 const BACKEND_URL = process.env.BACKEND_URL || 'http://127.0.0.1:3000';
 
+// ==== MODERATION THRESHOLDS (score 0..1) ====
+// score >= BLOCK_SCORE             -> BLOCK  (chặn, không forward xuống BE)
+// score >= REVIEW_SCORE (< BLOCK)  -> REVIEW (forward xuống BE, status = PENDING, admin duyệt)
+// score <  REVIEW_SCORE            -> ALLOW  (forward xuống BE, status = APPROVED -> hiển thị ngay)
+const BLOCK_SCORE = Number(process.env.MODERATION_BLOCK_SCORE || 0.8);
+const REVIEW_SCORE = Number(process.env.MODERATION_REVIEW_SCORE || 0.3);
+
 const POST_CREATE_METHOD = (process.env.POST_CREATE_METHOD || 'POST').toUpperCase();
 const POST_CREATE_PATH = process.env.POST_CREATE_PATH || '/api/backend/api/forums/posts';
 
@@ -57,12 +64,9 @@ async function analyze(text) {
   return resp.json();
 }
 
-function robustDecision(decision) {
-  if (typeof decision !== 'string') return 'review';
-  const d = decision.trim().toLowerCase();
-  if (d === 'allow' || d === 'passed' || d === 'safe') return 'allow';
-  if (d === 'block' || d === 'sensitive') return 'block';
-  return 'review';
+function toScore(value) {
+  const n = Number(value);
+  return Number.isFinite(n) ? n : 0;
 }
 
 function extractScanTexts(body) {
@@ -112,39 +116,42 @@ app.use(async (req, res, next) => {
 
   try {
     const text = extractScanTexts(body);
-    const moderation = { decision: 'allow', reason: 'empty-content', score: 0, categories: [] };
+    const moderation = { decision: 'allow', status: 'APPROVED', score: 0, categories: [] };
 
     if (text) {
       const result = await analyze(text);
       moderation.decision = result.decision;
-      moderation.score = result.score;
+      moderation.score = toScore(result.score);
       moderation.categories = result.categories || [];
       moderation.matches = result.matches || [];
       moderation.risk = result.risk;
       moderation.recommendation = result.report?.recommendation;
     }
 
-    const normalized = robustDecision(moderation.decision);
+    const score = moderation.score;
 
-    if (normalized === 'block') {
+    // BLOCK: score >= BLOCK_SCORE -> chặn trực tiếp, KHÔNG gửi request xuống BE
+    if (score >= BLOCK_SCORE) {
       return res.status(400).json({
         success: false,
         message: 'Nội dung chứa từ ngữ nhạy cảm. Không cho phép đăng bài.',
-        moderation,
+        moderation: { ...moderation, status: 'BLOCKED' },
       });
     }
 
-    if (normalized === 'review') {
-      return res.status(202).json({
-        success: false,
-        need_review: true,
-        message: 'Nội dung cần quản trị viên xem xét. Chưa được đăng tự động.',
-        moderation,
-      });
+    // REVIEW: 0.3 <= score < 0.8 -> forward xuống BE, status = PENDING (admin duyệt)
+    // ALLOW:  score < 0.3        -> forward xuống BE, status = APPROVED (hiển thị ngay)
+    moderation.status = score >= REVIEW_SCORE ? 'PENDING' : 'APPROVED';
+
+    // Gắn moderation vào JSON body (BE sẽ lưu status + score + categories)
+    if (req.headers['content-type']?.includes('application/json')) {
+      const parsed = JSON.parse(req.rawBody.toString('utf8') || '{}');
+      parsed.moderation = moderation;
+      req.forwardBody = Buffer.from(JSON.stringify(parsed), 'utf8');
+    } else {
+      req.forwardBody = req.rawBody;
     }
 
-    // ALLOW -> gắn raw body để forward xuống BE
-    req.forwardBody = req.rawBody;
     return next();
   } catch (err) {
     // AI lỗi -> fail-open để không chặn oan người dùng
@@ -161,12 +168,15 @@ const backendProxy = createProxyMiddleware({
   logLevel: 'warn',
   on: {
     proxyReq: (proxyReq, req) => {
-      if (req.forwardBody && proxyReq.getHeader('content-length')) {
+      // Body đã được body-parser đọc hết nên stream gốc đã cạn.
+      // Phải ghi lại raw body đã buffer và kết thúc request, nếu không
+      // upstream sẽ treo chờ body không bao giờ tới.
+      if (req.forwardBody) {
         proxyReq.setHeader('Content-Type', req.headers['content-type'] || 'application/json');
         proxyReq.setHeader('Content-Length', Buffer.byteLength(req.forwardBody));
         proxyReq.write(req.forwardBody);
-        proxyReq.end();
       }
+      proxyReq.end();
     },
   },
 });
