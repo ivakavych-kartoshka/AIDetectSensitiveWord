@@ -24,9 +24,11 @@ class Predictor:
         print("Loading tokenizer...")
         self.tokenizer = AutoTokenizer.from_pretrained(self.config.output_dir)
 
-        print("Loading model...")
+        print("Loading model (FP16)...")
         self.model = AutoModelForSequenceClassification.from_pretrained(
-            self.config.output_dir
+            "models/sensitiveai-v1-fp16",
+            torch_dtype=torch.float16,
+            _fast_init=True,
         )
 
         self.model.to(self.device)
