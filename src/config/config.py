@@ -41,6 +41,33 @@ class Config:
     fp16 = True
 
     # ===========================
+    # Discriminative Learning Rates (ULMFiT-style)
+    # ===========================
+
+    # Master switch: when True, the encoder is split into layers
+    # and each group gets its own learning-rate multiplier.
+    use_discriminative_lr = False
+
+    # LR multiplier for the deepest/embedding layers (slowest update).
+    # Layers linearly ramp from dlr_min_mult to 1.0 towards the head.
+    dlr_min_mult = 0.1
+
+    # The head (classifier / custom head) always uses the full LR.
+    # Unfrozen "bottom" layers share dlr_min_mult; layer groups scale up.
+    dlr_freeze_embeddings = False
+
+    # ===========================
+    # Two-stage training (freeze-then-finetune)
+    # ===========================
+
+    # Master switch: stage 1 freezes the encoder (head only learns),
+    # stage 2 unfreezes everything for full fine-tuning.
+    use_two_stage_training = False
+
+    # Fraction of total training steps spent in stage 1 (frozen).
+    two_stage_freeze_fraction = 0.3
+
+    # ===========================
     # Output
     # ===========================
 

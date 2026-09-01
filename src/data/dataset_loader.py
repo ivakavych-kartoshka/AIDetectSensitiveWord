@@ -155,3 +155,52 @@ def load_test_dataset():
     test_df = create_label_vector(load_dataframe(config.test_file))
 
     return dataframe_to_dataset(test_df)
+
+
+# =====================================================
+# LOAD DATASET BY LANGUAGE (en / vi / all)
+# =====================================================
+
+
+def load_dataset_by_language(languages):
+
+    if languages is None:
+        languages = ["all"]
+
+    languages = [str(l).lower() for l in languages]
+
+    # ==========================
+    # Load CSV
+    # ==========================
+
+    train_df = load_dataframe(config.train_file)
+    val_df = load_dataframe(config.val_file)
+    test_df = load_dataframe(config.test_file)
+
+    # ==========================
+    # Filter by language
+    # ==========================
+
+    if "all" not in languages:
+
+        train_df = train_df[train_df["language"].isin(languages)]
+        val_df = val_df[val_df["language"].isin(languages)]
+        test_df = test_df[test_df["language"].isin(languages)]
+
+    # ==========================
+    # Create label vectors
+    # ==========================
+
+    train_df = create_label_vector(train_df)
+    val_df = create_label_vector(val_df)
+    test_df = create_label_vector(test_df)
+
+    # ==========================
+    # Convert HuggingFace Dataset
+    # ==========================
+
+    train_dataset = dataframe_to_dataset(train_df)
+    val_dataset = dataframe_to_dataset(val_df)
+    test_dataset = dataframe_to_dataset(test_df)
+
+    return train_dataset, val_dataset, test_dataset
