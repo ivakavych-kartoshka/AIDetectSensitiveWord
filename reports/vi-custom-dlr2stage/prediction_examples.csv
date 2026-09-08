@@ -6,7 +6,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0006,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,cực kỳ thuyết phục con cac cuc ky thuyet phuc con cac
 0,1,0.9737,0,0,0.139,0,0,0.0001,0,0,0.0002,0,0,0.0002,0,0,0.0001,nguyễn bình thì fan thích thì gọi v t cũng có gọi st là chủ tịch đéo đâu cơ mà fan ngta thích thì sao cấm đc nguyen binh thi fan thich thi goi v t cung co goi st la chu tich eo au co ma fan ngta thich thi sao cam c
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,số it với số ea haiz so it voi so ea haiz
-1,1,0.9057,0,0,0.3896,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,vậy chứ đại gia nó cũng quất láng lảm nhãm làm ji cũng đéo có tiền mua đâu vay chu ai gia no cung quat lang lam nham lam ji cung eo co tien mua au
+1,1,0.9057,0,1,0.3896,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,vậy chứ đại gia nó cũng quất láng lảm nhãm làm ji cũng đéo có tiền mua đâu vay chu ai gia no cung quat lang lam nham lam ji cung eo co tien mua au
 0,0,0.0005,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,đây là liên quân chứ nhỉ ay la lien quan chu nhi
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,vào fb này mà cập nhật nè vao fb nay ma cap nhat ne
 1,1,0.9914,1,1,0.9254,0,0,0.0002,0,0,0.0003,0,0,0.0002,0,0,0.0002,ngu còn sủa cho lớn lúc đầu cũng mê việt kiều ngu con sua cho lon luc au cung me viet kieu
@@ -75,7 +75,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 1,1,0.9785,0,0,0.0097,0,0,0.0004,0,0,0.0004,0,0,0.0005,0,0,0.0003,vai ca lon vai ca lon
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,cô thanh niên xp độ mixi co thanh nien xp o mixi
 0,0,0.136,0,0,0.0181,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,người nhiều tiền thiệt khó hiểu nguoi nhieu tien thiet kho hieu
-0,1,0.636,0,0,0.4089,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,abe dạo này nóng quá à hoong quạo nha abe số abe nó mở ra zị thôi chửi con cac nè abe abe dao nay nong qua a hoong quao nha abe so abe no mo ra zi thoi chui con cac ne abe
+0,1,0.636,0,1,0.4089,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,abe dạo này nóng quá à hoong quạo nha abe số abe nó mở ra zị thôi chửi con cac nè abe abe dao nay nong qua a hoong quao nha abe so abe no mo ra zi thoi chui con cac ne abe
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,hên quá cuộc đời tui ko ăn hải sản d hen qua cuoc oi tui ko an hai san d
 0,0,0.0008,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,thay thay
 1,0,0.0005,1,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,k icm ca sĩ concac à k icm ca si concac a
@@ -95,14 +95,14 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.066,0,0,0.0019,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,phương nam i hộp sook bán ko phuong nam i hop sook ban ko
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,ch minh hiếu nói ch rất dễ thương thật ch minh hieu noi ch rat de thuong that
 1,1,0.5983,0,0,0.0398,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,khựa nhé cccc khua nhe cccc
-0,1,0.9923,0,0,0.4341,0,0,0.0002,0,0,0.0002,0,0,0.0002,0,0,0.0001,cơ mà có vẻ sỉ nhục con cá vàng quá ad e co ma co ve si nhuc con ca vang qua ad e
+0,1,0.9923,0,1,0.4341,0,0,0.0002,0,0,0.0002,0,0,0.0002,0,0,0.0001,cơ mà có vẻ sỉ nhục con cá vàng quá ad e co ma co ve si nhuc con ca vang qua ad e
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,thầy có nhận đệ tử ko thầy thay co nhan e tu ko thay
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,threecardo threecardo
 1,0,0.0004,1,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,m im đi add m im i add
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,thùy promise nghe hư trúc nhưng lại rất mộ dung phục à emmm thuy promise nghe hu truc nhung lai rat mo dung phuc a emmm
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,anh có thể nói sai được ko anh co the noi sai uoc ko
 0,1,0.8566,0,0,0.0834,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,lời nói thật là daus hiệu của kẻ sắp chết người sắp chết thường hay nói thật ii ngày nữa hối hânn quá muộn chăn loi noi that la daus hieu cua ke sap chet nguoi sap chet thuong hay noi that ii ngay nua hoi hann qua muon chan
-0,0,0.3318,0,0,0.0737,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,vì cuộc sống của gia đình dân hết đường sống mới biểu tình phản động đây mà khổ quá miền trung vi cuoc song cua gia inh dan het uong song moi bieu tinh phan ong ay ma kho qua mien trung
+0,1,0.3318,0,0,0.0737,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,vì cuộc sống của gia đình dân hết đường sống mới biểu tình phản động đây mà khổ quá miền trung vi cuoc song cua gia inh dan het uong song moi bieu tinh phan ong ay ma kho qua mien trung
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,khúc cuối anh cười cảm động thực sự khuc cuoi anh cuoi cam ong thuc su
 0,0,0.0005,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,cà khịa pew ca khia pew
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,tô ngọc cầm game liên minh huyền thoại mobi của riot sắp ra mắt ccc nên nó phải mạnh mẽ chứ ccc sợ bị lật ngôii đó mà to ngoc cam game lien minh huyen thoai mobi cua riot sap ra mat ccc nen no phai manh me chu ccc so bi lat ngoii o ma
@@ -113,7 +113,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0005,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,bamtp chạy ngay ddi con cac bamtp chay ngay ddi con cac
 0,0,0.0011,0,0,0.0001,0,0,0.0,0,0,0.0,0,0,0.0001,0,0,0.0,nhạc gì mà khó nghe tiếng nhac gi ma kho nghe tieng
 1,1,0.9894,1,1,0.9342,0,0,0.0002,0,0,0.0003,0,0,0.0002,0,0,0.0002,thằng cha tập qua đây dân mìh nó xem như choá ccccc thang cha tap qua ay dan mih no xem nhu choa ccccc
-0,0,0.4927,0,0,0.1331,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,atrà my đr atra my r
+0,1,0.4927,0,0,0.1331,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,atrà my đr atra my r
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,nguyễn hữu thái ib a nguyen huu thai ib a
 0,0,0.0007,0,0,0.0001,0,0,0.0,0,0,0.0001,0,0,0.0001,0,0,0.0,tiên tri dũ chụ mau khoẻ con cac tien tri du chu mau khoe con cac
 1,1,0.9934,1,1,0.9691,0,0,0.0003,0,0,0.0004,0,0,0.0003,0,0,0.0002,chơi fb đi con chó để ng dân thấy bản mặt thật của mày thằng chó choi fb i con cho e ng dan thay ban mat that cua may thang cho
@@ -125,7 +125,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,chị này nc thật thà quá chi nay nc that tha qua
 1,1,0.9837,0,0,0.0148,0,0,0.0003,0,0,0.0003,0,0,0.0005,0,0,0.0003,đéo eo
 0,0,0.1635,0,0,0.0104,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,tuy z ma i no do tuy z ma i no do
-0,1,0.977,0,0,0.4303,0,0,0.0001,0,0,0.0002,0,0,0.0002,0,0,0.0001,iss mở nắp quan tài iss mo nap quan tai
+0,1,0.977,0,1,0.4303,0,0,0.0001,0,0,0.0002,0,0,0.0002,0,0,0.0001,iss mở nắp quan tài iss mo nap quan tai
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,cho em xin inf anh nằm cạnh c kim con cac cho em xin inf anh nam canh c kim con cac
 0,1,0.9092,0,1,0.543,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,thu ha con chó bằng bưởi là của bố bạn à cccccccc thu ha con cho bang buoi la cua bo ban a cccccccc
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,cưng chị hiếu quá dể thương thật thà vui tính cung chi hieu qua de thuong that tha vui tinh
@@ -177,7 +177,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0006,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,cái này hả cai nay ha
 0,0,0.0008,0,0,0.0001,0,0,0.0,0,0,0.0001,0,0,0.0001,0,0,0.0,trò này trong sg đã chơi từ những năm trước ts nhỉ c nhớ có cảnh này trong film ván bài lật ngữa hay biệt động sg gì đấy c tro nay trong sg a choi tu nhung nam truoc ts nhi c nho co canh nay trong film van bai lat ngua hay biet ong sg gi ay c
 1,1,0.9926,0,1,0.9424,0,0,0.0002,0,0,0.0003,0,0,0.0002,0,0,0.0002,bên mỹ thiếu bệnh viện thần kinh ben my thieu benh vien than kinh
-0,0,0.2673,0,0,0.0159,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,hoài phong sinh ra cái miệng để ăn để nói lời hay k nói nói cái gì ngộ gke hoai phong sinh ra cai mieng e an e noi loi hay k noi noi cai gi ngo gke
+0,1,0.2673,0,0,0.0159,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,hoài phong sinh ra cái miệng để ăn để nói lời hay k nói nói cái gì ngộ gke hoai phong sinh ra cai mieng e an e noi loi hay k noi noi cai gi ngo gke
 0,0,0.0002,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,chị hay lắm à nha chi hay lam a nha
 1,1,0.9938,1,1,0.954,0,0,0.0003,0,0,0.0003,0,0,0.0003,0,0,0.0002,nguyễn hoàng sâm lol sâm nôn link con cac nguyen hoang sam lol sam non link con cac
 0,0,0.0027,0,0,0.0001,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0.0,trừng phạt kiểu gì thì nói rõ ra lun cứ lòng va lòng vòng thế ai chơi nói lảm nhãm anh trump lại rút hết visa tống cổ cả hơn eoo ooo sinh viên trung cộng về nước thì chúng nó lại chạy grap hết thì khổ trung phat kieu gi thi noi ro ra lun cu long va long vong the ai choi noi lam nham anh trump lai rut het visa tong co ca hon eoo ooo sinh vien trung cong ve nuoc thi chung no lai chay grap het thi kho
@@ -228,7 +228,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0006,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,k bt yếu kiểu gì mà tao vẫn chết k bt yeu kieu gi ma tao van chet
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,huyền khánh phùng khác mỗi cái mũi một bên chỉ lên một bên cắm xuống e huyen khanh phung khac moi cai mui mot ben chi len mot ben cam xuong e
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,đinh huyền trang ido của tôi hahaa inh huyen trang ido cua toi hahaa
-1,1,0.9835,1,0,0.4708,0,0,0.0001,0,0,0.0002,0,0,0.0002,0,0,0.0001,hỏng bồi thường cũng từ tiền của dân ra hết đm phải bỏ tù nó nếu nó lộng quyền thì mới đúng hong boi thuong cung tu tien cua dan ra het m phai bo tu no neu no long quyen thi moi ung
+1,1,0.9835,1,1,0.4708,0,0,0.0001,0,0,0.0002,0,0,0.0002,0,0,0.0001,hỏng bồi thường cũng từ tiền của dân ra hết đm phải bỏ tù nó nếu nó lộng quyền thì mới đúng hong boi thuong cung tu tien cua dan ra het m phai bo tu no neu no long quyen thi moi ung
 0,0,0.0005,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,nhà nước mình đang cố gắng gồng mình chống dịch tốn kém biết bao tiền của chưa kể kéo theo thiệt hại kinh tế bao ngành là người dân vn nếu ko góp công sức vào công cuộc dập dịch thì cũng đừng vì thiếu ý thức mà làm cả nước thêm vất vả nữa nha nuoc minh ang co gang gong minh chong dich ton kem biet bao tien cua chua ke keo theo thiet hai kinh te bao nganh la nguoi dan vn neu ko gop cong suc vao cong cuoc dap dich thi cung ung vi thieu y thuc ma lam ca nuoc them vat va nua
 0,0,0.0012,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,bùi đức hợp lý vai lon bui uc hop ly vai lon
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,liêm sĩ gì tầm này liem si gi tam nay
@@ -326,7 +326,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,pham yen nhi nhớ nhi pham yen nhi nho nhi
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,anh em banh bóng thua tha nợ nần hoặc chưa biết cách tham khảo kèo chơi thì xin vào nhóm bóng của anh hoàng cửu long mà bám chuẩn thắng nhiều anh em banh bong thua tha no nan hoac chua biet cach tham khao keo choi thi xin vao nhom bong cua anh hoang cuu long ma bam chuan thang nhieu
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,nghe kể chuyện tí rồi làm tiếp a thanh le ccc nghe ke chuyen ti roi lam tiep a thanh le ccc
-1,0,0.4316,0,0,0.0393,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,trí thông minh không bằng đc người nhậti nhưng mưu mô xảo trá thì có thừa tri thong minh khong bang c nguoi nhati nhung muu mo xao tra thi co thua
+1,1,0.4316,0,0,0.0393,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,trí thông minh không bằng đc người nhậti nhưng mưu mô xảo trá thì có thừa tri thong minh khong bang c nguoi nhati nhung muu mo xao tra thi co thua
 0,0,0.0006,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,cổng đẹp đấy d cong ep ay d
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,ze có rùi ccc ze co rui ccc
 0,1,0.8714,0,0,0.0112,0,0,0.0001,0,0,0.0001,0,0,0.0002,0,0,0.0001,nhanh khỏi còn về đá wc nhanh khoi con ve a wc
@@ -360,7 +360,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0015,0,0,0.0001,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0.0,ađại phu miền tây nói ngọng chữ v thành qu chứ chữ gốc là đi văng hoặc li văng chứ không ai viết là quăng cả a ai phu mien tay noi ngong chu v thanh qu chu chu goc la i vang hoac li vang chu khong ai viet la quang ca
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,giọng cười phu thuê giong cuoi phu thue
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,mn nghĩ ntn vs cái tên loạn thế âm binh mn nghi ntn vs cai ten loan the am binh
-0,0,0.3726,0,0,0.2807,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,nhìn mặt cụ chắc vào đảng của rằm tháng t nhin mat cu chac vao ang cua ram thang t
+0,1,0.3726,0,0,0.2807,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,nhìn mặt cụ chắc vào đảng của rằm tháng t nhin mat cu chac vao ang cua ram thang t
 1,1,0.9802,0,0,0.0155,0,0,0.0003,0,0,0.0003,0,0,0.0004,0,0,0.0002,hẳn là chich khỏe chich phê đê mê tối ngàyiii han la chich khoe chich phe e me toi ngayiii
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,a có ý định bán vợ ko a a co y inh ban vo ko a
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,ba tui có z cái quần mà mặc như này là giống i anh tiệp luôn ba tui co z cai quan ma mac nhu nay la giong i anh tiep luon
@@ -398,7 +398,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0012,0,0,0.0001,0,0,0.0,0,0,0.0001,0,0,0.0001,0,0,0.0,nhà e bán nước hoa bim bim nhé dùng xong chắc bê l chạy tiếp ý chị con cac nha e ban nuoc hoa bim bim nhe dung xong chac be l chay tiep y chi con cac
 0,1,0.9934,0,1,0.6693,0,0,0.0002,0,0,0.0002,0,0,0.0002,0,0,0.0001,chửi bây giời thì bẩn thỉu lắm ahihi chui bay gioi thi ban thiu lam ahihi
 0,1,0.7679,0,0,0.0114,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,xức xắcccc e xuc xacccc e
-1,1,0.99,0,0,0.3194,0,0,0.0002,0,0,0.0002,0,0,0.0002,0,0,0.0001,nỗ lực từ cái xe đạp lren đk cái xe ba gác rồi nói như đầu buồi no luc tu cai xe ap lren k cai xe ba gac roi noi nhu au buoi
+1,1,0.99,0,1,0.3194,0,0,0.0002,0,0,0.0002,0,0,0.0002,0,0,0.0001,nỗ lực từ cái xe đạp lren đk cái xe ba gác rồi nói như đầu buồi no luc tu cai xe ap lren k cai xe ba gac roi noi nhu au buoi
 1,1,0.9032,0,0,0.0073,0,0,0.0002,0,0,0.0002,0,0,0.0002,0,0,0.0001,sắp tự kỉ vì quá mệt mỏi thì gặp ngay quả ảnh đéo đỡ nổi sap tu ki vi qua met moi thi gap ngay qua anh eo o noi
 0,0,0.008,0,0,0.0016,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0.0,trình độ mẫu giáo trường làng mà bày đặt làm tiền tri đó sao ông này ở vn người ta gọi là ông lên bà xuống trinh o mau giao truong lang ma bay at lam tien tri o sao ong nay o vn nguoi ta goi la ong len ba xuong
 1,1,0.9936,0,1,0.9749,0,0,0.0004,0,0,0.0004,0,0,0.0004,0,0,0.0003,giống mấy thằng biến thái tụt quần show hàng đi lung tung trong xóm giong may thang bien thai tut quan show hang i lung tung trong xom
@@ -414,7 +414,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0005,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,cực kì thuyết phục con cac cuc ki thuyet phuc con cac
 0,0,0.005,0,0,0.0003,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0.0,iggs and zoig vẫn đang dùng đường sắt của thực dân pháp để lại iggs and zoig van ang dung uong sat cua thuc dan phap e lai
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,tất cả chỉ là kịch bản được sắp xếp sẵn còn sự thật là năm sau cưới cccccccccco tat ca chi la kich ban uoc sap xep san con su that la nam sau cuoi cccccccccco
-0,1,0.9934,0,0,0.4935,0,0,0.0002,0,0,0.0002,0,0,0.0002,0,0,0.0001,kichi sulii o khe b oi kichi sulii o khe b oi
+0,1,0.9934,0,1,0.4935,0,0,0.0002,0,0,0.0002,0,0,0.0002,0,0,0.0001,kichi sulii o khe b oi kichi sulii o khe b oi
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,ngủ cung phai ngồi đây nữa kkk nc cung ghê ngu cung phai ngoi ay nua kkk nc cung ghe
 0,0,0.0069,0,0,0.0002,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,có thấy chữ liên quân ko co thay chu lien quan ko
 0,0,0.0008,0,0,0.0001,0,0,0.0,0,0,0.0001,0,0,0.0001,0,0,0.0,cô mina trốn học đi chơi net thầy ơi co mina tron hoc i choi net thay oi
@@ -438,7 +438,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,thế sản phẩm kính đeo mắt này giá bao nhiêu anh ơi con cac the san pham kinh eo mat nay gia bao nhieu anh oi con cac
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,cực kì thuyết phục iii con cac cuc ki thuyet phuc iii con cac
 0,0,0.0022,0,0,0.0001,0,0,0.0,0,0,0.0,0,0,0.0001,0,0,0.0,như z giọt nước chỉ khác mỗi mặt nhu z giot nuoc chi khac moi mat
-0,1,0.7162,0,0,0.4115,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,bên mỹ chắc k có bệnh viện tâm thần ben my chac k co benh vien tam than
+0,1,0.7162,0,1,0.4115,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,bên mỹ chắc k có bệnh viện tâm thần ben my chac k co benh vien tam than
 0,1,0.9937,0,1,0.9708,0,0,0.0003,0,0,0.0004,0,0,0.0003,0,0,0.0003,các đầu gấu đầu méo của việt nam đâu hộ cái đi cac au gau au meo cua viet nam au ho cai i
 1,1,0.936,1,0,0.0075,0,0,0.0002,0,0,0.0002,0,0,0.0003,0,0,0.0002,cái éo j ca cũng nói dc cai eo j ca cung noi dc
 0,0,0.0005,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,bích phượng phía sau một cô gái con cac bich phuong phia sau mot co gai con cac
@@ -457,7 +457,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 1,1,0.986,0,0,0.0245,0,0,0.0003,0,0,0.0003,0,0,0.0004,0,0,0.0002,nó đéo biết ngại à no eo biet ngai a
 0,0,0.0007,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,ri thì như thor luôn ri thi nhu thor luon
 0,0,0.0234,0,0,0.0012,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,tức xanh người tuc xanh nguoi
-0,1,0.7859,0,0,0.3962,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,thanh thùy chắc bệnh đa nhân cách là từ đây cccc thanh thuy chac benh a nhan cach la tu ay cccc
+0,1,0.7859,0,1,0.3962,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,thanh thùy chắc bệnh đa nhân cách là từ đây cccc thanh thuy chac benh a nhan cach la tu ay cccc
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,cho hỏi trên sound cloud có chưa anh cho hoi tren sound cloud co chua anh
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,k hiểu ý duy nhà mình gì cả k hieu y duy nha minh gi ca
 1,0,0.0293,0,0,0.0019,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,mua hàu có tặng kèm đối tác hay gì không các ông mịa uống xong nằm đấy vs tay trái thì lại chán bỏ mẹ mua hau co tang kem oi tac hay gi khong cac ong mia uong xong nam ay vs tay trai thi lai chan bo me
@@ -492,7 +492,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,đhs nhớ ông già ccc hs nho ong gia ccc
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,chi ba dung la vang ngọc chi ba dung la vang ngoc
 1,1,0.9578,1,1,0.5217,0,0,0.0002,0,0,0.0001,0,0,0.0002,0,0,0.0001,eb at đúng rồi mấy người nổi tiếng do live câu like câu view là ko lâu dài bé đang chửi chị bạn linda của bé đó bởi ta nói lời nói nhanh hơn não là biết con người ntn miệng thì nói ko đụng tới ai mà nói chuyện trên đầu cha người ta đá xéo móc họng ngta kiểu đó hk ai rảnh mà chị minh hiếu đi ganh tỵ hay kiếm chuyện hãm hại cái con như m mặt méo mặt tròn của mày hay tên hay họ của m chị minh hiếu còn chả để trong tư tưởng còn chả thèm biết con như m là con nhỏ ất ơ nào nữa làm như m ngôi sao hạng i ở vn ko bằng bán hàng thì bán đi miệng thiên hạ thì phải chịu đừng có lôi kéo đá xéo ngta kiểu đó bu fam rẻ tiền eb at ung roi may nguoi noi tieng do live cau like cau view la ko lau dai be ang chui chi ban linda cua be o boi ta noi loi noi nhanh hon nao la biet con nguoi ntn mieng thi noi ko ung toi ai ma noi chuyen tren au cha nguoi ta a xeo moc hong ngta kieu o hk ai ranh ma chi minh hieu i ganh ty hay kiem chuyen ham hai cai con nhu m mat meo mat tron cua may hay ten hay ho cua m chi minh hieu con cha e trong tu tuong con cha them biet con nhu m la con nho at o nao nua lam nhu m ngoi sao hang i o vn ko bang ban hang thi ban i mieng thien ha thi phai chiu ung co loi keo a xeo ngta kieu o bu fam re tien
-0,0,0.447,0,0,0.0916,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,tưởng quần hở khe như a bảnh là đẳng cấp rồi không ngờ anh tiệp có quả quần đẳng cấp hơn v mặc như không mặc v minh duy tuong quan ho khe nhu a banh la ang cap roi khong ngo anh tiep co qua quan ang cap hon v mac nhu khong mac v minh duy
+0,1,0.447,0,0,0.0916,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,tưởng quần hở khe như a bảnh là đẳng cấp rồi không ngờ anh tiệp có quả quần đẳng cấp hơn v mặc như không mặc v minh duy tuong quan ho khe nhu a banh la ang cap roi khong ngo anh tiep co qua quan ang cap hon v mac nhu khong mac v minh duy
 1,1,0.9892,1,1,0.9178,0,0,0.0002,0,0,0.0002,0,0,0.0002,0,0,0.0002,nguyễn hữu nhân đớp cả của cháu thứ mắc dạy nguyen huu nhan op ca cua chau thu mac day
 1,1,0.9938,1,1,0.9781,0,0,0.0004,0,0,0.0005,0,0,0.0004,0,0,0.0003,bóng già chuyển giới cô cô nghe mắc ỉa súc vật lũ bongs chó tởm lợm bong gia chuyen gioi co co nghe mac ia suc vat lu bongs cho tom lom
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,có lộc lắm đây naz co loc lam ay naz
@@ -503,7 +503,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0007,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,bén như cái chén v ben nhu cai chen v
 0,1,0.9917,0,0,0.0971,0,0,0.0002,0,0,0.0003,0,0,0.0003,0,0,0.0002,no qua cho oi ngheo ma no no qua cho oi ngheo ma no
 1,1,0.9932,1,1,0.9634,0,0,0.0003,0,0,0.0004,0,0,0.0003,0,0,0.0002,thôn cái lù dit con me cs thon cai lu dit con me cs
-0,0,0.446,0,0,0.0136,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,khiếp con cac khiep con cac
+0,1,0.446,0,0,0.0136,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,khiếp con cac khiep con cac
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,thu trang thu trang
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,lỡ ng ta ko phải đi du lịch mà đi công việc công tác xa thì sao má lo ng ta ko phai i du lich ma i cong viec cong tac xa thi sao ma
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,chu gia bảo nước nào có phúc lợi lao động mà nghỉ phép vô thời hạn vẫn nhận lương để t bay sang với cccc chu gia bao nuoc nao co phuc loi lao ong ma nghi phep vo thoi han van nhan luong e t bay sang voi cccc
@@ -565,7 +565,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0013,0,0,0.0001,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0.0,trần như quỳnh thôi đi về con cac tran nhu quynh thoi i ve con cac
 1,1,0.985,0,1,0.7946,0,0,0.0002,0,0,0.0002,0,0,0.0002,0,0,0.0001,thân chửi học trò như i con chó thương cái lồl than chui hoc tro nhu i con cho thuong cai lol
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,phương noble s tóc gì làm vậy p phuong noble s toc gi lam vay p
-0,1,0.9807,0,0,0.394,0,0,0.0001,0,0,0.0001,0,0,0.0002,0,0,0.0001,giá như lúc này t đc về nhà và ăn bữa cơm vs bame gia nhu luc nay t c ve nha va an bua com vs bame
+0,1,0.9807,0,1,0.394,0,0,0.0001,0,0,0.0001,0,0,0.0002,0,0,0.0001,giá như lúc này t đc về nhà và ăn bữa cơm vs bame gia nhu luc nay t c ve nha va an bua com vs bame
 1,1,0.9475,0,0,0.0188,0,0,0.0002,0,0,0.0002,0,0,0.0002,0,0,0.0001,thế là bạn nằm yên cho nó hiếp dâm à v the la ban nam yen cho no hiep dam a v
 0,0,0.1409,0,0,0.0062,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,thảo tino có nhai thường thì ngta bán itr i hộp tôi bán rẻ cho sook i hộp nhé i thao tino co nhai thuong thi ngta ban itr i hop toi ban re cho sook i hop nhe i
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,mình bị gạt nè huhu chửi nó nữa đi cô ơi minh bi gat ne huhu chui no nua i co oi
@@ -617,7 +617,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,fan cứng nữa cơ à khê đấy fan cung nua co a khe ay
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,xin video vs b xin video vs b
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,đc anh ưiiii c anh uiiii
-1,0,0.2773,1,0,0.1894,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,hàn quốc là phồn vinh giả tạo làm tay sai cho đế quốc thôi han quoc la phon vinh gia tao lam tay sai cho e quoc thoi
+1,1,0.2773,1,0,0.1894,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,hàn quốc là phồn vinh giả tạo làm tay sai cho đế quốc thôi han quoc la phon vinh gia tao lam tay sai cho e quoc thoi
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,trăm năm kiều vẫn là kiều tộc trưởng vô đối là điều hiển nhiêni tram nam kieu van la kieu toc truong vo oi la ieu hien nhieni
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,nói chuyện thì đeo khẩu trang zô anh ưiii noi chuyen thi eo khau trang zo anh uiii
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,treo phòng vệ sinh nữa hả treo phong ve sinh nua ha
@@ -636,7 +636,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,nhờ sự miệt mài ngồi nhà cổ vũ của a mà rf mới có ngày hnay nho su miet mai ngoi nha co vu cua a ma rf moi co ngay hnay
 0,0,0.0029,0,0,0.0001,0,0,0.0,0,0,0.0001,0,0,0.0001,0,0,0.0,buồn thực sự buon thuc su
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,hôm trước đi xem mà ghê thật đấy nhưng mà phim hay cực hom truoc i xem ma ghe that ay nhung ma phim hay cuc
-0,0,0.4977,0,0,0.0248,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,phương thảo con cac gkee phuong thao con cac gkee
+0,1,0.4977,0,0,0.0248,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,phương thảo con cac gkee phuong thao con cac gkee
 1,1,0.9934,1,1,0.9722,0,0,0.0004,0,0,0.0004,0,0,0.0003,0,0,0.0002,nó tới đây để giết ng chứ có phải kinh doanh mẹ j mấy thằng bù nhìn nhận tiền ngập bản họng cỏng rắn cắn gà nhà cả lũ cũng ko có kết cục j tốt dc no toi ay e giet ng chu co phai kinh doanh me j may thang bu nhin nhan tien ngap ban hong cong ran can ga nha ca lu cung ko co ket cuc j tot dc
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,chúng e rất cần sự nghỉ học ccc chung e rat can su nghi hoc ccc
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,cô thật tình noi chuyện cưng quá co that tinh noi chuyen cung qua
@@ -770,7 +770,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0875,0,0,0.0052,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,đấy ý thức của con người vn iii ay y thuc cua con nguoi vn iii
 0,0,0.0002,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,tuấn mạnh à nãy xem rồi tuan manh a nay xem roi
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,chửi quá hay cô minh hiếu ơi chui qua hay co minh hieu oi
-1,0,0.308,1,0,0.0624,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,mấy thằng chó sủa bậy sướng được anh độ cho đi đóng phim con cac may thang cho sua bay suong uoc anh o cho i ong phim con cac
+1,1,0.308,1,0,0.0624,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,mấy thằng chó sủa bậy sướng được anh độ cho đi đóng phim con cac may thang cho sua bay suong uoc anh o cho i ong phim con cac
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,có thật kg chị co that kg chi
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,chị ấy có bầu hả anh chi ay co bau ha anh
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,trò vui của mấy ông xe ôm lúc dg vắng thôi tro vui cua may ong xe om luc dg vang thoi
@@ -882,7 +882,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0026,0,0,0.0001,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0.0,chuẩn bị học tiếng tàu đi mấy đứa chuan bi hoc tieng tau i may ua
 0,0,0.0596,0,0,0.0078,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,trường giang no no đg chỉ trích vì tính ích kỷ k nghĩ cho ngkhac chứ bả sống thì tốt th chứ có j đâu truong giang no no g chi trich vi tinh ich ky k nghi cho ngkhac chu ba song thi tot th chu co j au
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,thúy hằng bắt trend khá chậm thuy hang bat trend kha cham
-1,1,0.9658,1,0,0.4566,0,0,0.0001,0,0,0.0002,0,0,0.0001,0,0,0.0001,phạt nặng là thế nào bắn bỏ mẹ nó đi xem chừng nó có âm mưu đó i phat nang la the nao ban bo me no i xem chung no co am muu o i
+1,1,0.9658,1,1,0.4566,0,0,0.0001,0,0,0.0002,0,0,0.0001,0,0,0.0001,phạt nặng là thế nào bắn bỏ mẹ nó đi xem chừng nó có âm mưu đó i phat nang la the nao ban bo me no i xem chung no co am muu o i
 0,0,0.0005,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,nhìn hơi sai sai ad ới nhin hoi sai sai ad oi
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,quả logo kia thì đổi thành trọcgaming anh ơi con cac qua logo kia thi oi thanh trocgaming anh oi con cac
 1,1,0.9912,1,1,0.9424,0,0,0.0002,0,0,0.0003,0,0,0.0002,0,0,0.0002,bà hà thâm hơn dái chó ba ha tham hon dai cho
@@ -891,7 +891,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,1,0.9791,0,0,0.0206,0,0,0.0002,0,0,0.0003,0,0,0.0003,0,0,0.0002,má nó dơ vler ma no do vler
 0,0,0.0006,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,abé hoan banana abe hoan banana
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,bạn bè bên nhau đau ốm đều chia sẽ cùng nhau thì mới là bb ban be ben nhau au om eu chia se cung nhau thi moi la bb
-0,0,0.4034,0,0,0.0425,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,nghe bảo kp bị gay nghe bao kp bi gay
+0,1,0.4034,0,0,0.0425,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,nghe bảo kp bị gay nghe bao kp bi gay
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,tiền giang nè nhưng mình ở chợ gạo tien giang ne nhung minh o cho gao
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,from from
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,nguyễn tiên lý eg rồi nguyen tien ly eg roi
@@ -916,7 +916,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,đoàn sơn tênh mỹ mỹ hải nguyễn zui quá à oan son tenh my my hai nguyen zui qua a
 0,0,0.0015,0,0,0.0001,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0.0,dương dương mất nhận thức hả duong duong mat nhan thuc ha
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,hello hello
-1,0,0.331,1,0,0.0408,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,thiếui ý thức của người vn quá yếu và quá kém giờ giấc cao su cha chung ko ai khóc thiếu tinh thần hợp tác thieui y thuc cua nguoi vn qua yeu va qua kem gio giac cao su cha chung ko ai khoc thieu tinh than hop tac
+1,1,0.331,1,0,0.0408,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,thiếui ý thức của người vn quá yếu và quá kém giờ giấc cao su cha chung ko ai khóc thiếu tinh thần hợp tác thieui y thuc cua nguoi vn qua yeu va qua kem gio giac cao su cha chung ko ai khoc thieu tinh than hop tac
 1,1,0.993,1,1,0.9703,0,0,0.0003,0,0,0.0004,0,0,0.0003,0,0,0.0003,họ bị mù mà iii tiền che hàng cave đi rồi chúng cơ quan thiểu năng ko thấy đâu ho bi mu ma iii tien che hang cave i roi chung co quan thieu nang ko thay au
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,xinh quá à bản lĩnh quá à yêu e xinh qua a ban linh qua a yeu e
 0,0,0.0022,0,0,0.0001,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0.0,có ai suy nghi nếu lỡ hên hên bị ung thư rồi thì còn vài năm đừng có chữa trị gi hết lên kế hoạch trả thù c trả thù ai để đại nạn này cho dân việt đó c giống phim saw co ai suy nghi neu lo hen hen bi ung thu roi thi con vai nam ung co chua tri gi het len ke hoach tra thu c tra thu ai e ai nan nay cho dan viet o c giong phim saw
@@ -1003,7 +1003,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0057,0,0,0.0005,0,0,0.0,0,0,0.0,0,0,0.0001,0,0,0.0,mc nói giọng giống mc công tố mc noi giong giong mc cong to
 0,0,0.0399,0,0,0.0031,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,cái cố ảo chi thêm một phân bảo đảm lão chết cai co ao chi them mot phan bao am lao chet
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,ngày xưa chị nghèo cccc ngay xua chi ngheo cccc
-1,1,0.9935,1,0,0.474,0,0,0.0002,0,0,0.0002,0,0,0.0002,0,0,0.0001,clm ccccc trí xuân clm ccccc tri xuan
+1,1,0.9935,1,1,0.474,0,0,0.0002,0,0,0.0002,0,0,0.0002,0,0,0.0001,clm ccccc trí xuân clm ccccc tri xuan
 0,0,0.0005,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,là cô my dù hả thầy la co my du ha thay
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,tuấn bảo chắc bác pro hơn thầy tuan bao chac bac pro hon thay
 0,0,0.0063,0,0,0.0004,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0.0,hyeong tea thôi ông im hộ mồm đi thánh nhân đọc có vẻ như tiên nguyễn thì bảo tiên nguyễn bắt bẻ cái gì ở đây hyeong tea thoi ong im ho mom i thanh nhan oc co ve nhu tien nguyen thi bao tien nguyen bat be cai gi o ay
@@ -1021,7 +1021,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0005,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,biểu cảm được thực sự con cac bieu cam uoc thuc su con cac
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,sang thái ae trong team phẩu thuật nhanh thực sự sang thai ae trong team phau thuat nhanh thuc su
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,đúng lun ung lun
-1,0,0.4794,1,0,0.0357,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,như z giọt nước luôn thầy ơi trinh giọt nước suối còn thầy giọt nước cống thầy ạ ccc nhu z giot nuoc luon thay oi trinh giot nuoc suoi con thay giot nuoc cong thay a ccc
+1,1,0.4794,1,0,0.0357,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,như z giọt nước luôn thầy ơi trinh giọt nước suối còn thầy giọt nước cống thầy ạ ccc nhu z giot nuoc luon thay oi trinh giot nuoc suoi con thay giot nuoc cong thay a ccc
 0,0,0.0569,0,0,0.0017,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,ăn ở không quá r hack f anh của mị an o khong qua r hack f anh cua mi
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,mều siu nhơn khanhly pham c trang mua tạm cái bút ntkia bù cho c ly đi ccc meu siu nhon khanhly pham c trang mua tam cai but ntkia bu cho c ly i ccc
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,chắc mình mù âm nhạc nên thấy k hay chac minh mu am nhac nen thay k hay
@@ -1071,7 +1071,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,từ miền nam em vượt ra bắc cccccc tu mien nam em vuot ra bac cccccc
 1,1,0.9936,1,1,0.9528,0,0,0.0003,0,0,0.0003,0,0,0.0003,0,0,0.0002,nó quản lí internet nhồi sọ dân từng phút từng giây dân tq đông nhưng nói chung nòi giống cũng éo ra con mẹ gì no quan li internet nhoi so dan tung phut tung giay dan tq ong nhung noi chung noi giong cung eo ra con me gi
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,tôi là đệ nhất quốc sư hoa kì trần dần là cố dấn tối cao của tổng thống đô nan trum hiện tại là quốc trưởng của chánh phủ lâm thời việt nam cộng hòa trân trọng kính chào các dị đồng bào trong nước toi la e nhat quoc su hoa ki tran dan la co dan toi cao cua tong thong o nan trum hien tai la quoc truong cua chanh phu lam thoi viet nam cong hoa tran trong kinh chao cac di ong bao trong nuoc
-0,0,0.4022,0,0,0.0124,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,ý kiến cái nhân y kien cai nhan
+0,1,0.4022,0,0,0.0124,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,ý kiến cái nhân y kien cai nhan
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,thu ngân b lm lẩu phan à v thu ngan b lm lau phan a v
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,có đi cùng chuyến bay với bệnh nhân zi không vậy co i cung chuyen bay voi benh nhan zi khong vay
 0,0,0.0033,0,0,0.0002,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0.0,có một lúc cuồng bài thất tình và thế giới ảo tình yêu thật của trịnh đình quang co mot luc cuong bai that tinh va the gioi ao tinh yeu that cua trinh inh quang
@@ -1159,7 +1159,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,chúc mừng năm kỷ hợi zoig chúc mừng nhiều may mắn mới chuc mung nam ky hoi zoig chuc mung nhieu may man moi
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,phạm văn rạng từng bắt dính e quả của pele và vô địch sea game lần i pham van rang tung bat dinh e qua cua pele va vo ich sea game lan i
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,liên minh mobile lien minh mobile
-0,1,0.9852,0,0,0.3537,0,0,0.0001,0,0,0.0002,0,0,0.0002,0,0,0.0001,bao giờ a nghèo thì a mới biết chứ giờ a giầu a ns cái đéo jk chả đúng bao gio a ngheo thi a moi biet chu gio a giau a ns cai eo jk cha ung
+0,1,0.9852,0,1,0.3537,0,0,0.0001,0,0,0.0002,0,0,0.0002,0,0,0.0001,bao giờ a nghèo thì a mới biết chứ giờ a giầu a ns cái đéo jk chả đúng bao gio a ngheo thi a moi biet chu gio a giau a ns cai eo jk cha ung
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,hoàng tử khói hoang tu khoi
 0,0,0.0016,0,0,0.0001,0,0,0.0,0,0,0.0,0,0,0.0001,0,0,0.0,ai rồi cũng phải lớn thôii con cac ai roi cung phai lon thoii con cac
 1,1,0.9914,1,1,0.8979,0,0,0.0002,0,0,0.0002,0,0,0.0002,0,0,0.0001,bậy à éo phải cơm sườn mà là cháu ngoan boác hù bay a eo phai com suon ma la chau ngoan boac hu
@@ -1194,7 +1194,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,lê khánh an đúng á trăm người trăm ý biết làm sao cho vừa lòng thiên hạ le khanh an ung a tram nguoi tram y biet lam sao cho vua long thien ha
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,đùa chứ nhiều lúc không hiểu nổi cảm xúc hiện tại của mk ra sao luôn ua chu nhieu luc khong hieu noi cam xuc hien tai cua mk ra sao luon
 0,0,0.0011,0,0,0.0001,0,0,0.0,0,0,0.0,0,0,0.0001,0,0,0.0,lê thị huỳnh như m giống như cánh hoa vậy le thi huynh nhu m giong nhu canh hoa vay
-1,0,0.3966,0,0,0.081,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,thì bjo nó vẫn chiếm đó thôi giải thích để tỏ ra mình ngu hả thi bjo no van chiem o thoi giai thich e to ra minh ngu ha
+1,1,0.3966,0,0,0.081,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,thì bjo nó vẫn chiếm đó thôi giải thích để tỏ ra mình ngu hả thi bjo no van chiem o thoi giai thich e to ra minh ngu ha
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,ủa bữa khóc lóc xin lỗi rồi giờ chửi tiếp hả ua bua khoc loc xin loi roi gio chui tiep ha
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,cực kì thuyết phục v cuc ki thuyet phuc v
 0,0,0.0026,0,0,0.0001,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0.0,đc của ló c cua lo
@@ -1224,7 +1224,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0007,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,thanh tú thanh tu
 1,1,0.9946,1,1,0.9662,0,0,0.0004,0,0,0.0004,0,0,0.0004,0,0,0.0003,dmcs dmcs
 0,0,0.0017,0,0,0.0001,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0.0,còn cái gì để chửi ko ad chuyện bây h ko nói ôm mãi cái quá khư làm gì e con cai gi e chui ko ad chuyen bay h ko noi om mai cai qua khu lam gi e
-1,0,0.4644,0,0,0.0308,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,nay bu hơi nhiều nay bu hoi nhieu
+1,1,0.4644,0,0,0.0308,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,nay bu hơi nhiều nay bu hoi nhieu
 1,0,0.0091,0,0,0.0002,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,khịa vãi l cccc khia vai l cccc
 1,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,phong cách lợn viên đây phong cach lon vien ay
 1,1,0.9933,1,1,0.9541,0,0,0.0003,0,0,0.0003,0,0,0.0003,0,0,0.0002,bui hoang thầy lon bui hoang thay lon
@@ -1275,7 +1275,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,mình nhận bán sản phẩm trong hình nhé minh nhan ban san pham trong hinh nhe
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,vâng anh vang anh
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,buồn thật chứ buon that chu
-1,0,0.2729,1,0,0.0226,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,djtmenhaong djtmenhaong
+1,1,0.2729,1,0,0.0226,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,djtmenhaong djtmenhaong
 1,1,0.9858,1,1,0.736,0,0,0.0002,0,0,0.0002,0,0,0.0002,0,0,0.0001,nó chửi cô minh hiếu là sai nhưng mà đm tụi m thật sự rất quá đáng nó có xạo hay gì đó nếu ko ảnh hưởng ai thì việc gì phải đập phá chén cơm người khác v còn việc giá i chai nước hoa rẻ thì tự tụi m phải nhận thức được nó là hàng loại nào nếu thấy chấp nhận thì mua nó đâu ship lại hay lấy dao kề cổ bắt bây mua còn trần đoàn nên có lời xin lôi tới cô mh đi còn tđ nó có xạo sài hàng fake hay thật kệ nó tụi bây chắc gì ko sống ảo chắc gì ko sài hàng fake nên ai làm gì kệ ngta tạo nghiệp chi v no chui co minh hieu la sai nhung ma m tui m that su rat qua ang no co xao hay gi o neu ko anh huong ai thi viec gi phai ap pha chen com nguoi khac v con viec gia i chai nuoc hoa re thi tu tui m phai nhan thuc uoc no la hang loai nao neu thay chap nhan thi mua no au ship lai hay lay dao ke co bat bay mua con tran oan nen co loi xin loi toi co mh i con t no co xao sai hang fake hay that ke no tui bay chac gi ko song ao chac gi ko sai hang fake nen ai lam gi ke ngta tao nghiep chi v
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,đây là thầy giáo ba đẹp trai vai lon ý tau là thằng ở phía dưới góc phải đó ay la thay giao ba ep trai vai lon y tau la thang o phia duoi goc phai o
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,trúc mơ talk like zậy nèk improve inglish truc mo talk like zay nek improve inglish
@@ -1317,7 +1317,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0026,0,0,0.0001,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0.0,khoe sáu múi đi abe khoe sau mui i abe
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,chị ba chửi dần văn nghe phê đỡ tốn tiền mua ce chi ba chui dan van nghe phe o ton tien mua ce
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,mua đi đc dịp têt này thôi mua i c dip tet nay thoi
-0,0,0.2714,0,0,0.0163,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,cảm ơn các bạn chả là mình bị tắc đít mấy hôm nay may nhờ có các cmt của các bạn mà mình cười phụt cả cứt ra rồi tks nhiều e cam on cac ban cha la minh bi tac it may hom nay may nho co cac cmt cua cac ban ma minh cuoi phut ca cut ra roi tks nhieu e
+0,1,0.2714,0,0,0.0163,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,cảm ơn các bạn chả là mình bị tắc đít mấy hôm nay may nhờ có các cmt của các bạn mà mình cười phụt cả cứt ra rồi tks nhiều e cam on cac ban cha la minh bi tac it may hom nay may nho co cac cmt cua cac ban ma minh cuoi phut ca cut ra roi tks nhieu e
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,đoàn anh thư dìa quê cũng ko yên cẩn thận nha cô bé oan anh thu dia que cung ko yen can than nha co be
 0,0,0.0057,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,yêu thế tình vai ca lon e yeu the tinh vai ca lon e
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,dễ ăn sootr như thế mới sướng de an sootr nhu the moi suong
@@ -1398,7 +1398,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,chi tieng nhiều cho e vay vay tram triệu di chi chi tieng nhieu cho e vay vay tram trieu di chi
 0,0,0.0078,0,0,0.0002,0,0,0.0,0,0,0.0001,0,0,0.0001,0,0,0.0,đừng có vậy nghe hôn m ung co vay nghe hon m
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,cty e lam khuc thường tín cty e lam khuc thuong tin
-0,1,0.839,0,0,0.3177,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,bùi đức hậu cr nó còn nói với bạn thì nó lại quê vai lon a bui uc hau cr no con noi voi ban thi no lai que vai lon a
+0,1,0.839,0,1,0.3177,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,bùi đức hậu cr nó còn nói với bạn thì nó lại quê vai lon a bui uc hau cr no con noi voi ban thi no lai que vai lon a
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,tôi xin video với toi xin video voi
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,thanh trường thanh truong
 0,0,0.0005,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,nguyễn thành công thầy cố tình vậy để đỡ mất công biến về đấy nguyen thanh cong thay co tinh vay e o mat cong bien ve ay
@@ -1439,7 +1439,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,kyo york bạn hát tiếng việt chắc ko hay bang nữa là mà so sánh ha ha kyo york ban hat tieng viet chac ko hay bang nua la ma so sanh ha ha
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,đúng thực sự ung thuc su
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,hihi hihi
-0,0,0.4827,0,0,0.0206,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,chồ ui ăn mặc sẹt si quá chị minh hiếu ơi i cho ui an mac set si qua chi minh hieu oi i
+0,1,0.4827,0,0,0.0206,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,chồ ui ăn mặc sẹt si quá chị minh hiếu ơi i cho ui an mac set si qua chi minh hieu oi i
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,tùng sói từ hành tinh khác đã bay vô thả tim tung soi tu hanh tinh khac a bay vo tha tim
 0,1,0.9899,0,0,0.0457,0,0,0.0003,0,0,0.0003,0,0,0.0004,0,0,0.0002,nguyễn thuận không hay thì nói không hay ý kiến cái đéo gì nguyen thuan khong hay thi noi khong hay y kien cai eo gi
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,toàn thanh niên nghiêm túc v toan thanh nien nghiem tuc v
@@ -1475,7 +1475,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,dàn allstar của vn may mắn lắm mới đc cùng chụp hình cùng the shy top lane số i thế giới đến từ sa đéc chứ đùai dan allstar cua vn may man lam moi c cung chup hinh cung the shy top lane so i the gioi en tu sa ec chu uai
 0,0,0.0017,0,0,0.0001,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0.0,mua giày sốp pe để đc giá mềm nhé con cac mua giay sop pe e c gia mem nhe con cac
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,thuyết phục lắm abe thuyet phuc lam abe
-1,0,0.4836,0,0,0.0033,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,loằng ngoằng thì được cái éo gì mà ông thích loằng ngoằng thế lạ vai lon loang ngoang thi uoc cai eo gi ma ong thich loang ngoang the la vai lon
+1,1,0.4836,0,0,0.0033,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,loằng ngoằng thì được cái éo gì mà ông thích loằng ngoằng thế lạ vai lon loang ngoang thi uoc cai eo gi ma ong thich loang ngoang the la vai lon
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,giờ này thì gọi grab ship hàng thui chứ ra đường chi nữa cccc gio nay thi goi grab ship hang thui chu ra uong chi nua cccc
 1,1,0.9761,1,0,0.2374,0,0,0.0001,0,0,0.0002,0,0,0.0002,0,0,0.0001,báo chí gì mà nói sạo lộ liễu nản bao chi gi ma noi sao lo lieu nan
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,ngô phước minh mặt thầy tựa tựa binz sao sao ấy có nào như tao không ngo phuoc minh mat thay tua tua binz sao sao ay co nao nhu tao khong
@@ -1508,11 +1508,11 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,đây mới là lý do tú chia tay abe ay moi la ly do tu chia tay abe
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,xem mèo tôm bị bản quyền là bay jeenh đấy xem meo tom bi ban quyen la bay jeenh ay
 1,0,0.0004,1,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,tùng hỏng cccc tung hong cccc
-0,0,0.2774,0,0,0.0982,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,đội quân khùng khậu ủng hộ ae hồng công oi quan khung khau ung ho ae hong cong
+0,1,0.2774,0,0,0.0982,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,đội quân khùng khậu ủng hộ ae hồng công oi quan khung khau ung ho ae hong cong
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,cần info áo can info ao
 0,0,0.0008,0,0,0.0001,0,0,0.0,0,0,0.0001,0,0,0.0001,0,0,0.0,bữa nay có thêm chị trang đi lang thang từ ea đen eb rui và còn hơn nữa bua nay co them chi trang i lang thang tu ea en eb rui va con hon nua
 1,0,0.0005,1,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,kính gửi barack ngài nên học cách sống đế vương như bọn anh đây khaaaaaa khaaaa kinh gui barack ngai nen hoc cach song e vuong nhu bon anh ay khaaaaaa khaaaa
-0,0,0.3291,0,0,0.065,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,các anh xin ghi nhận sữ lỗ nực của em cac anh xin ghi nhan su lo nuc cua em
+0,1,0.3291,0,0,0.065,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,các anh xin ghi nhận sữ lỗ nực của em cac anh xin ghi nhan su lo nuc cua em
 0,1,0.9858,0,1,0.6597,0,0,0.0002,0,0,0.0002,0,0,0.0002,0,0,0.0001,linh chó biệt danh linh cau linh cho biet danh linh cau
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,ngô tấn hưng trình thầy ba hơn chứ ông duke có bao giờ dám cầm poppy fl cướp red chưa ngo tan hung trinh thay ba hon chu ong duke co bao gio dam cam poppy fl cuop red chua
 0,0,0.0002,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,ii năm đấy các ông ah ii nam ay cac ong ah
@@ -1525,7 +1525,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,1,0.9881,0,0,0.0652,0,0,0.0002,0,0,0.0002,0,0,0.0003,0,0,0.0002,xàm quá đó là phá hoại chứ giỏi cái gì xam qua o la pha hoai chu gioi cai gi
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,trên tream nhìn nhỏ hơn tren tream nhin nho hon
 0,0,0.0002,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,lê nhật bạn thân ơi duyên số sinh ra chúng mình le nhat ban than oi duyen so sinh ra chung minh
-0,1,0.9684,0,0,0.3741,0,0,0.0001,0,0,0.0002,0,0,0.0002,0,0,0.0001,fake và xịn thế thôi tốt nhất đeo thượng đình cho thượng đẳng fake va xin the thoi tot nhat eo thuong inh cho thuong ang
+0,1,0.9684,0,1,0.3741,0,0,0.0001,0,0,0.0002,0,0,0.0002,0,0,0.0001,fake và xịn thế thôi tốt nhất đeo thượng đình cho thượng đẳng fake va xin the thoi tot nhat eo thuong inh cho thuong ang
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,chung bị dân việt chơi đến cùng chung bi dan viet choi en cung
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,ỳe ỳe ỳe e ye ye ye e
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,mai là tròn ia ngày kể từ hôm đó hi vọng ko sao mai la tron ia ngay ke tu hom o hi vong ko sao
@@ -1583,8 +1583,8 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,quá chất abe ơi qua chat abe oi
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,cang ngay hieu cang đep duyen lam em cang ngay hieu cang ep duyen lam em
 1,1,0.9945,1,1,0.9591,0,0,0.0003,0,0,0.0003,0,0,0.0003,0,0,0.0002,mat day qua bac ky lam gi den linh dien ma dam chui tat ca bac ky nhu vay mat day qua bac ky lam gi den linh dien ma dam chui tat ca bac ky nhu vay
-0,0,0.3886,0,0,0.0027,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,chửi vừa lòng vai lon chui vua long vai lon
-0,0,0.3145,0,0,0.0116,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,tử hình còn j nữa tu hinh con j nua
+0,1,0.3886,0,0,0.0027,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,chửi vừa lòng vai lon chui vua long vai lon
+0,1,0.3145,0,0,0.0116,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,tử hình còn j nữa tu hinh con j nua
 0,1,0.8608,0,0,0.026,0,0,0.0001,0,0,0.0001,0,0,0.0002,0,0,0.0001,khổ con cac kho con cac
 0,0,0.0006,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,cay chứ v cay chu v
 0,0,0.0027,0,0,0.0001,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0.0,khi mày mặc quần trong đắt hơn quần ngoài con cac khi may mac quan trong at hon quan ngoai con cac
@@ -1677,7 +1677,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0014,0,0,0.0001,0,0,0.0,0,0,0.0,0,0,0.0001,0,0,0.0,đi xe đạp cho vui xe điện làm gì con cac i xe ap cho vui xe ien lam gi con cac
 0,1,0.9549,0,1,0.7363,0,0,0.0001,0,0,0.0002,0,0,0.0002,0,0,0.0001,người nghèo thì bị chúng đó đàng áp cho không ngốc đầu lên nổi nghèo thì cho chết hết đất nước thiên đường của người giàu nguoi ngheo thi bi chung o ang ap cho khong ngoc au len noi ngheo thi cho chet het at nuoc thien uong cua nguoi giau
 0,1,0.989,0,1,0.926,0,0,0.0002,0,0,0.0002,0,0,0.0002,0,0,0.0001,anh hoàng lân này hết việc để nói xàm anh hoang lan nay het viec e noi xam
-0,0,0.3781,0,0,0.034,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,nhìn mặc ngu ngu thấy thôi đã mắc cười zồi nhin mac ngu ngu thay thoi a mac cuoi zoi
+0,1,0.3781,0,0,0.034,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,nhìn mặc ngu ngu thấy thôi đã mắc cười zồi nhin mac ngu ngu thay thoi a mac cuoi zoi
 1,0,0.019,0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,vãi thật con cac lạy luôn vai that con cac lay luon
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,thôi rồi đời con đời cháu mình trả cũng ko hết nợ thoi roi oi con oi chau minh tra cung ko het no
 1,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,lại hợp sâm wtf lai hop sam wtf
@@ -1725,7 +1725,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,1,0.9952,0,1,0.9173,0,0,0.0003,0,0,0.0003,0,0,0.0003,0,0,0.0002,má mất dạy ma mat day
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,ccc ccc
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,quỳnh phạm thế còn chờ gì e quynh pham the con cho gi e
-0,0,0.4175,0,0,0.0753,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,tren tuy ms ở hàn vs tên gọi cánh cmn hoa nhưng ở vn nó đã là trend từ thời ơ cmn kìa vs tên gọi lá cmn mít e tren tuy ms o han vs ten goi canh cmn hoa nhung o vn no a la trend tu thoi o cmn kia vs ten goi la cmn mit e
+0,1,0.4175,0,0,0.0753,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,tren tuy ms ở hàn vs tên gọi cánh cmn hoa nhưng ở vn nó đã là trend từ thời ơ cmn kìa vs tên gọi lá cmn mít e tren tuy ms o han vs ten goi canh cmn hoa nhung o vn no a la trend tu thoi o cmn kia vs ten goi la cmn mit e
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,em đi viện bảo tàng ở vĩnh long thấy ông này trong hình sao giống thầy quá k biết có quan hệ gì k ạ em i vien bao tang o vinh long thay ong nay trong hinh sao giong thay qua k biet co quan he gi k a
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,t biết chứ bộ nên t mới làm cành hoa cho m đó con cac t biet chu bo nen t moi lam canh hoa cho m o con cac
 0,0,0.0087,0,0,0.0004,0,0,0.0,0,0,0.0001,0,0,0.0001,0,0,0.0,cá chết dân đói ca chet dan oi
@@ -1737,7 +1737,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,chủ tiệm mà chu tiem ma
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,sống chậm song cham
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,cúm mùa thoi không sao đâu các cháu cum mua thoi khong sao au cac chau
-0,0,0.4291,0,0,0.3218,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,trần dần là cộng sản nằm vùng ở mỹ đấy thưa quí vị tran dan la cong san nam vung o my ay thua qui vi
+0,1,0.4291,0,1,0.3218,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,trần dần là cộng sản nằm vùng ở mỹ đấy thưa quí vị tran dan la cong san nam vung o my ay thua qui vi
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,ánh lêtrang ciuukhánh lylệ suri hnao đi ăn cưới nhớ make xa xa thế này nhéee anh letrang ciuukhanh lyle suri hnao i an cuoi nho make xa xa the nay nheee
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,nghe thôi biết cội nguồn nơi nào nét đẹp của bản sắc văn hóa vùng miền nghe thoi biet coi nguon noi nao net ep cua ban sac van hoa vung mien
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,ổ nhền nhện o nhen nhen
@@ -1847,7 +1847,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0007,0,0,0.0001,0,0,0.0,0,0,0.0001,0,0,0.0001,0,0,0.0,zoo tỷ này tao mà là nhà nước tao đem tao nghiên cứu xe chạy gas hoặc solar xog tao mở nhà mày rồi cho công nhân vô làm vậy mỗi tháng công nhân gửi về quê đc ít nhất atriệu con cac vẫn hơn thằng ad rồi v zoo ty nay tao ma la nha nuoc tao em tao nghien cuu xe chay gas hoac solar xog tao mo nha may roi cho cong nhan vo lam vay moi thang cong nhan gui ve que c it nhat atrieu con cac van hon thang ad roi v
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,học sinh nam định lúc này hoc sinh nam inh luc nay
 0,0,0.0006,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,không sợ địch mạnh sợ đồng đội thiếu suy nghĩ khong so ich manh so ong oi thieu suy nghi
-1,1,0.9807,1,0,0.4841,0,0,0.0001,0,0,0.0002,0,0,0.0002,0,0,0.0001,đổi cờ hay kỳ gì cũng không đổi cái rẻ rách e đâu nha bác c oi co hay ky gi cung khong oi cai re rach e au nha bac c
+1,1,0.9807,1,1,0.4841,0,0,0.0001,0,0,0.0002,0,0,0.0002,0,0,0.0001,đổi cờ hay kỳ gì cũng không đổi cái rẻ rách e đâu nha bác c oi co hay ky gi cung khong oi cai re rach e au nha bac c
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,trăm năm kiều vẫn là kiều tram nam kieu van la kieu
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,seri ảnh cưới đc nhiều người xem nhất seri anh cuoi c nhieu nguoi xem nhat
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,thinh nguyen con tinh chứ đâu má tự cách ly rồi thinh nguyen con tinh chu au ma tu cach ly roi
@@ -1858,7 +1858,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,đập bộ pc lấy j stream ap bo pc lay j stream
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,da đen vậy tộc trưởng ccc da en vay toc truong ccc
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,ruby đen mua đâu đấy e ơi bảo a cái ruby en mua au ay e oi bao a cai
-1,1,0.7854,1,0,0.3088,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,mấy thằng cứ cực kì thuyết phục k chán à hay là k có não vậy iii may thang cu cuc ki thuyet phuc k chan a hay la k co nao vay iii
+1,1,0.7854,1,1,0.3088,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,mấy thằng cứ cực kì thuyết phục k chán à hay là k có não vậy iii may thang cu cuc ki thuyet phuc k chan a hay la k co nao vay iii
 1,0,0.019,0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,lưu bảo toàn đọc hại não vai ca lon luu bao toan oc hai nao vai ca lon
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,nguyen cao tuan hay nguyen cao tuan hay
 0,0,0.0005,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,bác đã già hơn quá nhiều rồi mong bác mạnh khỏe bac a gia hon qua nhieu roi mong bac manh khoe
@@ -1872,7 +1872,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,đôi lúc trong lòng đầy tâm sự nhưng biết nói cùng ai và hiện tại cũng thế có lúc mong thời gian trôi thật nhanh rồi có lúc mog thời gian chậm lại oi luc trong long ay tam su nhung biet noi cung ai va hien tai cung the co luc mong thoi gian troi that nhanh roi co luc mog thoi gian cham lai
 0,0,0.0007,0,0,0.0001,0,0,0.0,0,0,0.0001,0,0,0.0001,0,0,0.0,nguyễn kim sale mà nhìn chiếc ảnh tưởng thầy sale sox ạ con cac nguyen kim sale ma nhin chiec anh tuong thay sale sox a con cac
 1,0,0.0003,1,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,bo truong cho bo truong cho
-1,1,0.9869,1,0,0.3109,0,0,0.0002,0,0,0.0002,0,0,0.0002,0,0,0.0001,avõ xuân hoan m làm như có mình ên mặt m xài ròi mình ên mày khen nhưng nhìu ng thấy đéo tốt thì ng ta nói mất cai lon gì căng avo xuan hoan m lam nhu co minh en mat m xai roi minh en may khen nhung nhiu ng thay eo tot thi ng ta noi mat cai lon gi cang
+1,1,0.9869,1,1,0.3109,0,0,0.0002,0,0,0.0002,0,0,0.0002,0,0,0.0001,avõ xuân hoan m làm như có mình ên mặt m xài ròi mình ên mày khen nhưng nhìu ng thấy đéo tốt thì ng ta nói mất cai lon gì căng avo xuan hoan m lam nhu co minh en mat m xai roi minh en may khen nhung nhiu ng thay eo tot thi ng ta noi mat cai lon gi cang
 1,0,0.0062,0,0,0.0002,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0.0,thông đít hàng ngày c thong it hang ngay c
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,edit sợ thế con cac edit so the con cac
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,ở nhà cho lành o nha cho lanh
@@ -1893,7 +1893,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0005,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,chào các bạn quay trở lại với tòi súng vờ lốc con cac chao cac ban quay tro lai voi toi sung vo loc con cac
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,lêu lêu leu leu
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,không biết anh tuân có ngy chưa nữa mê ảnh quá khong biet anh tuan co ngy chua nua me anh qua
-0,0,0.4266,0,0,0.1717,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,ông này diễn hài xàm hay nhất ong nay dien hai xam hay nhat
+0,1,0.4266,0,0,0.1717,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,ông này diễn hài xàm hay nhất ong nay dien hai xam hay nhat
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,nguyễn hoàng anh tú huhu sợ qá k chạy grap nữa về phog ăn ngủ đủ giấc nguyen hoang anh tu huhu so qa k chay grap nua ve phog an ngu u giac
 0,0,0.0008,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,thấy anh cmt mà buồn lây c thay anh cmt ma buon lay c
 0,0,0.0005,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,nguyễn đình tuyên hahaa lạc hậu nguyen inh tuyen hahaa lac hau
@@ -2055,16 +2055,16 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 1,1,0.9949,1,1,0.9577,0,0,0.0004,0,0,0.0004,0,0,0.0003,0,0,0.0003,du ma may du ma may
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,nhanh ề xoá kênh nhanh e xoa kenh
 1,1,0.9937,1,1,0.9675,0,0,0.0003,0,0,0.0004,0,0,0.0003,0,0,0.0002,vậy đù má thằng ad chó đẻ ko có trái tim vì ko cứu đứa bé ko báo ca ko kêu báo đăng đù má thằng ad vay u ma thang ad cho e ko co trai tim vi ko cuu ua be ko bao ca ko keu bao ang u ma thang ad
-1,1,0.8604,1,0,0.4643,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,trần lâm vậy bác sĩ bên đó ngu quá biết đang dịch vậy mà vẫn cầm ống hút đi lấy máu tran lam vay bac si ben o ngu qua biet ang dich vay ma van cam ong hut i lay mau
+1,1,0.8604,1,1,0.4643,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,trần lâm vậy bác sĩ bên đó ngu quá biết đang dịch vậy mà vẫn cầm ống hút đi lấy máu tran lam vay bac si ben o ngu qua biet ang dich vay ma van cam ong hut i lay mau
 0,0,0.0005,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,lag rất đúng lúc lag rat ung luc
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,tại không phá đảo được game này nên mới bảo là game cho con nít chứ phá đảo được thì lại ghi là game dành cho độ tai khong pha ao uoc game nay nen moi bao la game cho con nit chu pha ao uoc thi lai ghi la game danh cho o
-1,1,0.8472,1,0,0.3435,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,cắn ko đúng định hướng ko đủ số lượng là nó đuổi chứ ko phải lấy e củ của nó mà dễ đâu mấy ông phản động ơi can ko ung inh huong ko u so luong la no uoi chu ko phai lay e cu cua no ma de au may ong phan ong oi
+1,1,0.8472,1,1,0.3435,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,cắn ko đúng định hướng ko đủ số lượng là nó đuổi chứ ko phải lấy e củ của nó mà dễ đâu mấy ông phản động ơi can ko ung inh huong ko u so luong la no uoi chu ko phai lay e cu cua no ma de au may ong phan ong oi
 0,0,0.0005,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,khổ thân a người ta lương t btr thù ăn mì tôm thôi còn a lương t btr phải ăn mì cua hoàng đế kho than a nguoi ta luong t btr thu an mi tom thoi con a luong t btr phai an mi cua hoang e
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,bên anh nó đợi người chết gần bằng bệnh cúm ấy thì mới quan tâm qua bên đó đeo khẩu trang nó kỳ thị khỏi nói ben anh no oi nguoi chet gan bang benh cum ay thi moi quan tam qua ben o eo khau trang no ky thi khoi noi
 1,0,0.0025,1,0,0.0001,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0.0,trần minh hoài là hình cánh hoa nha c k phải cailoncat hihi tran minh hoai la hinh canh hoa nha c k phai cailoncat hihi
 0,0,0.0028,0,0,0.0001,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0.0,oce a nhõ oce a nho
 0,0,0.0015,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,đc vai lon lun kk c vai lon lun kk
-0,1,0.9084,0,0,0.4965,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,chết rồi tình báo cộng sản bị lộ rồi chet roi tinh bao cong san bi lo roi
+0,1,0.9084,0,1,0.4965,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,chết rồi tình báo cộng sản bị lộ rồi chet roi tinh bao cong san bi lo roi
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,cuong viet quốc sư vẫn hài hơn ngô kỷ i bậc cuong viet quoc su van hai hon ngo ky i bac
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,theo thông tin câph nhật thì dòng sông hương đã đưa iz thí sinh ra xa bờ còn iz còn lại đã bị đè chớt bên tích phân theo thong tin caph nhat thi dong song huong a ua iz thi sinh ra xa bo con iz con lai a bi e chot ben tich phan
 0,0,0.0006,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,ngủ làm sao đc khi bh là csgo time chứ con cac ngu lam sao c khi bh la csgo time chu con cac
@@ -2095,7 +2095,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,bt các bạn phan cuồng chửi vậy mik đã ko nêu ra ý kiến cá nhân bt cac ban phan cuong chui vay mik a ko neu ra y kien ca nhan
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,ad chứ kh fải add nha a ơi ccc ad chu kh fai add nha a oi ccc
 1,1,0.9937,1,1,0.9793,0,0,0.0005,0,0,0.0005,0,0,0.0005,0,0,0.0004,mấy thằng thằng bóng lộn xàm lòn may thang thang bong lon xam lon
-0,0,0.4772,0,0,0.059,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,nguyễn văn tường nghe nhiều mà t cũng thuộc mẹ nó luốn nguyen van tuong nghe nhieu ma t cung thuoc me no luon
+0,1,0.4772,0,0,0.059,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,nguyễn văn tường nghe nhiều mà t cũng thuộc mẹ nó luốn nguyen van tuong nghe nhieu ma t cung thuoc me no luon
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,khôi rainy toang không khác hn rồi nhé khoi rainy toang khong khac hn roi nhe
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,vậy chị cho em z tỉ ik vay chi cho em z ti ik
 0,0,0.0034,0,0,0.0002,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0.0,coi kênh thầy đéo bh bật loa ngoài con cac coi kenh thay eo bh bat loa ngoai con cac
@@ -2151,7 +2151,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0056,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,rất thuyết phục con cac rat thuyet phuc con cac
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,oce oce
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,già làng lại chế truyện của ng ta ri gia lang lai che truyen cua ng ta ri
-1,1,0.9945,1,0,0.3038,0,0,0.0002,0,0,0.0003,0,0,0.0003,0,0,0.0002,a xamlol qua a xamlol qua
+1,1,0.9945,1,1,0.3038,0,0,0.0002,0,0,0.0003,0,0,0.0003,0,0,0.0002,a xamlol qua a xamlol qua
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,càng tới dịp lễ tết hay gì đó là càng muốn về nhà chơi với ba mẹ con cac cang toi dip le tet hay gi o la cang muon ve nha choi voi ba me con cac
 0,1,0.9933,0,1,0.7808,0,0,0.0002,0,0,0.0002,0,0,0.0002,0,0,0.0001,ngu mới tới những chỗ này ngu moi toi nhung cho nay
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,góp vui một tí e gop vui mot ti e
@@ -2164,7 +2164,7 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,vinaphone vinaphone
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,nhẹ nhe
 1,1,0.7098,0,0,0.0044,0,0,0.0001,0,0,0.0001,0,0,0.0002,0,0,0.0001,đéo hiểu nổi style kiểu gì con c hưng phấn hay gì eo hieu noi style kieu gi con c hung phan hay gi
-0,0,0.4695,0,0,0.0027,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,no banh xac no banh xac
+0,1,0.4695,0,0,0.0027,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,no banh xac no banh xac
 0,0,0.0033,0,0,0.0001,0,0,0.0,0,0,0.0,0,0,0.0001,0,0,0.0,ăn hết trừ con gì nằm ngửa là không ăn an het tru con gi nam ngua la khong an
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,công nhận giống y đúc khác mỗi cái mặt cong nhan giong y uc khac moi cai mat
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,dung junn chuẩn đấy chị buồn cho nữ chính dung junn chuan ay chi buon cho nu chinh
@@ -2246,8 +2246,8 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0005,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,nhìn mà học tập nguyễn gia bảo cầu thủ hơn tỉ của thầy đấy nhin ma hoc tap nguyen gia bao cau thu hon ti cua thay ay
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,cực kì cute có nhiều tài lẻ nhất là cà khịa cuc ki cute co nhieu tai le nhat la ca khia
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,bang cali đang dịch kinh khủng cầu mong trần dần mạnh khỏe bang cali ang dich kinh khung cau mong tran dan manh khoe
-0,1,0.8194,0,0,0.3992,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,do dat bọn cktp nó cmt trôi cả cmt của anh đi rồi con cac do dat bon cktp no cmt troi ca cmt cua anh i roi con cac
-0,0,0.4855,0,0,0.2027,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,giả vờ lấy sok của mình rồi nhét vào tay mấy người đi đường bảo tiền anh chị rơi này vậy mà ai cũng tin bị lừa mà còn quay lại cảm ơn mình rối riat haizz vai lon con cac gia vo lay sok cua minh roi nhet vao tay may nguoi i uong bao tien anh chi roi nay vay ma ai cung tin bi lua ma con quay lai cam on minh roi riat haizz vai lon con cac
+0,1,0.8194,0,1,0.3992,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,do dat bọn cktp nó cmt trôi cả cmt của anh đi rồi con cac do dat bon cktp no cmt troi ca cmt cua anh i roi con cac
+0,1,0.4855,0,0,0.2027,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,giả vờ lấy sok của mình rồi nhét vào tay mấy người đi đường bảo tiền anh chị rơi này vậy mà ai cũng tin bị lừa mà còn quay lại cảm ơn mình rối riat haizz vai lon con cac gia vo lay sok cua minh roi nhet vao tay may nguoi i uong bao tien anh chi roi nay vay ma ai cung tin bi lua ma con quay lai cam on minh roi riat haizz vai lon con cac
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,học sinh xuất sắc hoc sinh xuat sac
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,trinh tú hà võ cánh hoa nè trinh tu ha vo canh hoa ne
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,hoàng văn hướng hoang van huong
@@ -2340,16 +2340,16 @@ insult_true,insult_pred,insult_score,hate_speech_true,hate_speech_pred,hate_spee
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,chú nói đúng chu noi ung
 0,1,0.9774,0,1,0.7358,0,0,0.0002,0,0,0.0002,0,0,0.0002,0,0,0.0001,gõ chài đâm tiêu vô đầu nó đi cô go chai am tieu vo au no i co
 1,1,0.9896,1,1,0.9227,0,0,0.0002,0,0,0.0002,0,0,0.0002,0,0,0.0001,mấy con cá đàn áp dân từ dân mà ra đc chính phủ trả tiền và trao quyền lực để quay lại đàn áp dân may con ca an ap dan tu dan ma ra c chinh phu tra tien va trao quyen luc e quay lai an ap dan
-1,0,0.4091,1,0,0.2003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,nha tien tri cung so virut hay sao tien tri noi cong san tieu tan ma noi lao nha tien tri cung so virut hay sao tien tri noi cong san tieu tan ma noi lao
+1,1,0.4091,1,0,0.2003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,nha tien tri cung so virut hay sao tien tri noi cong san tieu tan ma noi lao nha tien tri cung so virut hay sao tien tri noi cong san tieu tan ma noi lao
 0,0,0.0008,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,dậy thì không thành công day thi khong thanh cong
 0,0,0.0002,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,mở khóa mo khoa
 0,0,0.0005,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,viết sang đúng ời viet sang ung oi
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,mì tôm alaska nghèo mi tom alaska ngheo
 0,0,0.0426,0,0,0.0006,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0,bích hường vai lon bich huong vai lon
 0,0,0.0003,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,nam linh bạn ko phải fan ko hiểu đc mình nghĩ bạn nên nghe lại để cảm nhận đừng vội phán xét nam linh ban ko phai fan ko hieu c minh nghi ban nen nghe lai e cam nhan ung voi phan xet
-1,1,0.9506,1,0,0.4414,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,d m thắm ơi cho em vào lại không sợ chó đi em sai rồi hôm sau em k giám chúc mừng năm mới nữa huhu d m tham oi cho em vao lai khong so cho i em sai roi hom sau em k giam chuc mung nam moi nua huhu
+1,1,0.9506,1,1,0.4414,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,d m thắm ơi cho em vào lại không sợ chó đi em sai rồi hôm sau em k giám chúc mừng năm mới nữa huhu d m tham oi cho em vao lai khong so cho i em sai roi hom sau em k giam chuc mung nam moi nua huhu
 0,0,0.0004,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,khúc sau đâu abe khuc sau au abe
-1,0,0.4435,1,0,0.2053,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,hàn quốc thuợng đẳng lắm mọi người đừng lo cho hàn quốc nha han quoc thuong ang lam moi nguoi ung lo cho han quoc nha
+1,1,0.4435,1,0,0.2053,0,0,0.0001,0,0,0.0001,0,0,0.0001,0,0,0.0001,hàn quốc thuợng đẳng lắm mọi người đừng lo cho hàn quốc nha han quoc thuong ang lam moi nguoi ung lo cho han quoc nha
 1,1,0.9939,0,1,0.9483,0,0,0.0003,0,0,0.0003,0,0,0.0003,0,0,0.0002,dạng háng bắt sele bu cu chứ gì thầy dang hang bat sele bu cu chu gi thay
 1,1,0.9931,1,1,0.9601,0,0,0.0003,0,0,0.0003,0,0,0.0003,0,0,0.0002,dou ma thầy dou ma thay
 1,1,0.9939,1,1,0.9802,0,0,0.0005,0,0,0.0005,0,0,0.0005,0,0,0.0003,biết bao xương máu của con dân việt nam đã đổ xuống nhuộm đỏ mảnh đất này mới có được ngày hôm nay vì lòng tham không đáy mà bọn chó cộng sản tiếp tay cho trung cộng tàn phá đất nước rồi sau này con cháu sẽ đào mã chôn xác bọn mày cùng tổ tiên nhà bọn mày lên rủa bọn mày có chết cũng không được yên đâu biet bao xuong mau cua con dan viet nam a o xuong nhuom o manh at nay moi co uoc ngay hom nay vi long tham khong ay ma bon cho cong san tiep tay cho trung cong tan pha at nuoc roi sau nay con chau se ao ma chon xac bon may cung to tien nha bon may len rua bon may co chet cung khong uoc yen au

@@ -1,0 +1,268 @@
+{
+    "objective": "f2",
+    "min_precision": 0.5,
+    "baseline_flat_0_5": {
+        "micro_precision": 0.7209,
+        "micro_recall": 0.6447,
+        "micro_f1": 0.6807,
+        "per_class": {
+            "insult": {
+                "precision": 0.7475,
+                "recall": 0.6864,
+                "f1": 0.7156
+            },
+            "hate_speech": {
+                "precision": 0.6774,
+                "recall": 0.5813,
+                "f1": 0.6257
+            },
+            "threat": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+            },
+            "harassment": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+            },
+            "sexual": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+            },
+            "spam": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+            }
+        }
+    },
+    "baseline_config_thresholds": {
+        "micro_precision": 0.7104,
+        "micro_recall": 0.6529,
+        "micro_f1": 0.6805,
+        "per_class": {
+            "insult": {
+                "precision": 0.7475,
+                "recall": 0.6864,
+                "f1": 0.7156
+            },
+            "hate_speech": {
+                "precision": 0.6541,
+                "recall": 0.6021,
+                "f1": 0.627
+            },
+            "threat": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+            },
+            "harassment": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+            },
+            "sexual": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+            },
+            "spam": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+            }
+        }
+    },
+    "tuned": {
+        "f1": {
+            "thresholds": {
+                "insult": 0.25,
+                "hate_speech": 0.3,
+                "threat": 0.5,
+                "harassment": 0.5,
+                "sexual": 0.5,
+                "spam": 0.5
+            },
+            "eval": {
+                "micro_precision": 0.6915,
+                "micro_recall": 0.6735,
+                "micro_f1": 0.6824,
+                "per_class": {
+                    "insult": {
+                        "precision": 0.7162,
+                        "recall": 0.7114,
+                        "f1": 0.7138
+                    },
+                    "hate_speech": {
+                        "precision": 0.652,
+                        "recall": 0.6159,
+                        "f1": 0.6335
+                    },
+                    "threat": {
+                        "precision": 0.0,
+                        "recall": 0.0,
+                        "f1": 0.0
+                    },
+                    "harassment": {
+                        "precision": 0.0,
+                        "recall": 0.0,
+                        "f1": 0.0
+                    },
+                    "sexual": {
+                        "precision": 0.0,
+                        "recall": 0.0,
+                        "f1": 0.0
+                    },
+                    "spam": {
+                        "precision": 0.0,
+                        "recall": 0.0,
+                        "f1": 0.0
+                    }
+                }
+            }
+        },
+        "f2": {
+            "thresholds": {
+                "insult": 0.05,
+                "hate_speech": 0.05,
+                "threat": 0.5,
+                "harassment": 0.5,
+                "sexual": 0.5,
+                "spam": 0.5
+            },
+            "eval": {
+                "micro_precision": 0.6228,
+                "micro_recall": 0.7202,
+                "micro_f1": 0.6679,
+                "per_class": {
+                    "insult": {
+                        "precision": 0.664,
+                        "recall": 0.7455,
+                        "f1": 0.7024
+                    },
+                    "hate_speech": {
+                        "precision": 0.5645,
+                        "recall": 0.6817,
+                        "f1": 0.6176
+                    },
+                    "threat": {
+                        "precision": 0.0,
+                        "recall": 0.0,
+                        "f1": 0.0
+                    },
+                    "harassment": {
+                        "precision": 0.0,
+                        "recall": 0.0,
+                        "f1": 0.0
+                    },
+                    "sexual": {
+                        "precision": 0.0,
+                        "recall": 0.0,
+                        "f1": 0.0
+                    },
+                    "spam": {
+                        "precision": 0.0,
+                        "recall": 0.0,
+                        "f1": 0.0
+                    }
+                }
+            }
+        },
+        "recall": {
+            "thresholds": {
+                "insult": 0.05,
+                "hate_speech": 0.05,
+                "threat": 0.5,
+                "harassment": 0.5,
+                "sexual": 0.5,
+                "spam": 0.5
+            },
+            "eval": {
+                "micro_precision": 0.6228,
+                "micro_recall": 0.7202,
+                "micro_f1": 0.6679,
+                "per_class": {
+                    "insult": {
+                        "precision": 0.664,
+                        "recall": 0.7455,
+                        "f1": 0.7024
+                    },
+                    "hate_speech": {
+                        "precision": 0.5645,
+                        "recall": 0.6817,
+                        "f1": 0.6176
+                    },
+                    "threat": {
+                        "precision": 0.0,
+                        "recall": 0.0,
+                        "f1": 0.0
+                    },
+                    "harassment": {
+                        "precision": 0.0,
+                        "recall": 0.0,
+                        "f1": 0.0
+                    },
+                    "sexual": {
+                        "precision": 0.0,
+                        "recall": 0.0,
+                        "f1": 0.0
+                    },
+                    "spam": {
+                        "precision": 0.0,
+                        "recall": 0.0,
+                        "f1": 0.0
+                    }
+                }
+            }
+        }
+    },
+    "recommended": {
+        "thresholds": {
+            "insult": 0.05,
+            "hate_speech": 0.05,
+            "threat": 0.5,
+            "harassment": 0.5,
+            "sexual": 0.5,
+            "spam": 0.5
+        },
+        "eval": {
+            "micro_precision": 0.6228,
+            "micro_recall": 0.7202,
+            "micro_f1": 0.6679,
+            "per_class": {
+                "insult": {
+                    "precision": 0.664,
+                    "recall": 0.7455,
+                    "f1": 0.7024
+                },
+                "hate_speech": {
+                    "precision": 0.5645,
+                    "recall": 0.6817,
+                    "f1": 0.6176
+                },
+                "threat": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0
+                },
+                "harassment": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0
+                },
+                "sexual": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0
+                },
+                "spam": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0
+                }
+            }
+        }
+    }
+}

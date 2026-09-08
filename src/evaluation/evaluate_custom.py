@@ -112,13 +112,19 @@ labels = np.array(df["labels"].tolist())
 
 probabilities = Metrics.predict_probability(all_logits)
 
-predictions = Metrics.predict_binary(all_logits)
+predictions = Metrics.predict_binary(
+    all_logits,
+    per_class_thresholds=config.per_class_thresholds,
+)
 
 # =====================================================
 # METRICS
 # =====================================================
 
-metrics = Metrics.calculate((all_logits, labels))
+metrics = Metrics.calculate_with_thresholds(
+    (all_logits, labels),
+    per_class_thresholds=config.per_class_thresholds,
+)
 
 print("\n[metrics] en-custom")
 print(json.dumps(metrics, indent=4))

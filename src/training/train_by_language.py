@@ -15,6 +15,11 @@ def build_trainer(
     model_name=None,
     use_discriminative_lr=None,
     use_two_stage_training=None,
+    use_class_weights=False,
+    use_focal_loss=False,
+    focal_loss_gamma=None,
+    per_class_thresholds=None,
+    class_weights=None,
 ):
 
     import torch
@@ -55,6 +60,11 @@ def build_trainer(
         use_custom_head=use_custom_head,
         use_discriminative_lr=use_discriminative_lr,
         use_two_stage_training=use_two_stage_training,
+        use_class_weights=use_class_weights,
+        use_focal_loss=use_focal_loss,
+        focal_loss_gamma=focal_loss_gamma,
+        per_class_thresholds=per_class_thresholds,
+        class_weights=class_weights,
     )
 
     return trainer_builder
@@ -101,6 +111,11 @@ def train_language(
     tag=None,
     use_discriminative_lr=None,
     use_two_stage_training=None,
+    use_class_weights=False,
+    use_focal_loss=False,
+    focal_loss_gamma=None,
+    per_class_thresholds=None,
+    class_weights=None,
 ):
 
     suffix = ""
@@ -125,6 +140,11 @@ def train_language(
         model_name=start_model,
         use_discriminative_lr=use_discriminative_lr,
         use_two_stage_training=use_two_stage_training,
+        use_class_weights=use_class_weights,
+        use_focal_loss=use_focal_loss,
+        focal_loss_gamma=focal_loss_gamma,
+        per_class_thresholds=per_class_thresholds,
+        class_weights=class_weights,
     )
 
     run_training(trainer_builder, output_dir)
@@ -152,6 +172,8 @@ def find_latest_checkpoint(output_dir):
 
 
 def main():
+
+    from src.config.config import Config as DefaultConfig
 
     parser = argparse.ArgumentParser(
         description="Train SensitiveAI model by language"
@@ -194,7 +216,76 @@ def main():
         help="Use two-stage training: freeze encoder first, then fine-tune all",
     )
 
+    parser.add_argument(
+        "--class-weights",
+        action="store_true",
+        help="Use class-specific pos_weight in loss to handle imbalanced labels",
+    )
+
+    parser.add_argument(
+        "--class-weights-json",
+        default=None,
+        help="JSON dict of per-label class weights, e.g. '{\"insult\":1.2,\"hate_speech\":2.0}'. Requires --class-weights.",
+    )
+
+    parser.add_argument(
+        "--focal-loss",
+        action="store_true",
+        help="Use Focal Loss instead of standard BCEWithLogitsLoss",
+    )
+
+    parser.add_argument(
+        "--focal-gamma",
+        type=float,
+        default=None,
+        help="Gamma parameter for Focal Loss (default: 2.0)",
+    )
+
+    parser.add_argument(
+        "--per-class-thresholds",
+        action="store_true",
+        help="Use per-class thresholds from config during evaluation (hate_speech=0.35, others=0.5)",
+    )
+
+    parser.add_argument(
+        "--train-file",
+        default=None,
+        help="Optional custom training CSV (e.g. augmented dataset)",
+    )
+
     args = parser.parse_args()
+
+    # Override training file if provided
+    if args.train_file:
+        config.train_file = args.train_file
+        print(f"\nTrain file    : {config.train_file}")
+
+    # Build per_class_thresholds dict if requested
+    per_class_thresholds = None
+
+    if args.per_class_thresholds:
+
+        per_class_thresholds = DefaultConfig().per_class_thresholds
+
+        print(f"\nPer-class thresholds: {per_class_thresholds}")
+
+    # Build label-specific class weights if requested
+    class_weights = None
+
+    if args.class_weights_json:
+
+        import json
+
+        try:
+
+            class_weights = json.loads(args.class_weights_json)
+
+        except json.JSONDecodeError:
+
+            print("Invalid --class-weights-json, must be a JSON dict")
+            return
+
+        print(f"\nLabel-specific class weights: {class_weights}")
 
     if args.language == "all":
         languages = ["en", "vi"]
@@ -210,6 +301,11 @@ def main():
             tag=args.tag,
             use_discriminative_lr=args.discriminative_lr,
             use_two_stage_training=args.two_stage,
+            use_class_weights=args.class_weights,
+            use_focal_loss=args.focal_loss,
+            focal_loss_gamma=args.focal_gamma,
+            per_class_thresholds=per_class_thresholds,
+            class_weights=class_weights,
         )
 
     print("\n" + "=" * 60)

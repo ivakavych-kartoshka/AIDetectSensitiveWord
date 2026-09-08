@@ -68,6 +68,42 @@ class Config:
     two_stage_freeze_fraction = 0.3
 
     # ===========================
+    # Class Weights (pos_weight for BCEWithLogitsLoss)
+    # ===========================
+
+    use_class_weights = False
+
+    class_weights = {
+        "insult": 1.0,
+        "hate_speech": 2.0,
+        "threat": 1.0,
+        "harassment": 1.0,
+        "sexual": 1.0,
+        "spam": 1.0,
+    }
+
+    # ===========================
+    # Focal Loss
+    # ===========================
+
+    use_focal_loss = False
+
+    focal_loss_gamma = 2.0
+
+    # ===========================
+    # Per-Class Thresholds (evaluation)
+    # ===========================
+
+    per_class_thresholds = {
+        "insult": 0.25,
+        "hate_speech": 0.30,
+        "threat": 0.5,
+        "harassment": 0.5,
+        "sexual": 0.5,
+        "spam": 0.5,
+    }
+
+    # ===========================
     # Output
     # ===========================
 

@@ -63,12 +63,21 @@ class Metrics:
         cls,
         logits,
         threshold=None,
+        per_class_thresholds=None,
     ):
+
+        probabilities = cls.sigmoid(logits)
+
+        if per_class_thresholds is not None:
+
+            thresholds = np.array(
+                [per_class_thresholds.get(l, cls.DEFAULT_THRESHOLD) for l in LABELS]
+            )
+
+            return (probabilities >= thresholds).astype(int)
 
         if threshold is None:
             threshold = cls.DEFAULT_THRESHOLD
-
-        probabilities = cls.sigmoid(logits)
 
         return (probabilities >= threshold).astype(int)
 
@@ -177,6 +186,57 @@ class Metrics:
         }
 
     # ------------------------------------------------------
+    # HuggingFace Trainer Metrics (per-class thresholds)
+    # ------------------------------------------------------
+
+    @classmethod
+    def calculate_with_thresholds(cls, eval_pred, per_class_thresholds=None):
+
+        logits, labels = eval_pred
+
+        probabilities = cls.sigmoid(logits)
+
+        if per_class_thresholds is not None:
+
+            thresholds = np.array(
+                [per_class_thresholds.get(l, cls.DEFAULT_THRESHOLD) for l in LABELS]
+            )
+
+        else:
+
+            thresholds = cls.DEFAULT_THRESHOLD
+
+        predictions = (probabilities >= thresholds).astype(int)
+
+        precision, recall, f1, _ = precision_recall_fscore_support(
+            labels,
+            predictions,
+            average="micro",
+            zero_division=0,
+        )
+
+        accuracy = accuracy_score(labels, predictions)
+
+        try:
+            roc_auc = roc_auc_score(labels, probabilities, average="micro")
+        except Exception:
+            roc_auc = 0.0
+
+        try:
+            pr_auc = average_precision_score(labels, probabilities, average="micro")
+        except Exception:
+            pr_auc = 0.0
+
+        return {
+            "accuracy": round(float(accuracy), 4),
+            "precision": round(float(precision), 4),
+            "recall": round(float(recall), 4),
+            "f1": round(float(f1), 4),
+            "roc_auc": round(float(roc_auc), 4),
+            "pr_auc": round(float(pr_auc), 4),
+        }
+
+    # ------------------------------------------------------
     # Classification Report
     # ------------------------------------------------------
 
@@ -186,11 +246,13 @@ class Metrics:
         logits,
         labels,
         threshold=None,
+        per_class_thresholds=None,
     ):
 
         predictions = cls.predict_binary(
             logits,
             threshold,
+            per_class_thresholds=per_class_thresholds,
         )
 
         return classification_report(
@@ -210,11 +272,13 @@ class Metrics:
         logits,
         labels,
         threshold=None,
+        per_class_thresholds=None,
     ):
 
         predictions = cls.predict_binary(
             logits,
             threshold,
+            per_class_thresholds=per_class_thresholds,
         )
 
         matrices = {}

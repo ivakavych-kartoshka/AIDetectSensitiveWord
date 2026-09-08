@@ -91,15 +91,25 @@ def apply_leetspeak(text):
 
 def apply_abbreviation(text):
 
-    keys = list(ABBREVIATION.keys())
+    keys = [k for k in ABBREVIATION.keys() if k not in ("vi", "en")]
+
+    if not keys:
+
+        return text
 
     random.shuffle(keys)
 
-    for abbr in keys[: random.randint(1, 4)]:
+    for abbr_key in keys[: random.randint(1, 4)]:
 
-        original = ABBREVIATION[abbr]
+        original = ABBREVIATION[abbr_key]
 
-        text = text.replace(original, abbr)
+        if isinstance(original, list):
+
+            original = random.choice(original)
+
+        if isinstance(original, str) and original in text:
+
+            text = text.replace(original, abbr_key)
 
     return text
 

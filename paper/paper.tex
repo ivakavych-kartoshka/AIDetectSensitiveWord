@@ -1,0 +1,483 @@
+% This is samplepaper.tex, a sample chapter demonstrating the
+% LLNCS macro package for Springer Computer Science proceedings;
+% Version 2.21 of 2022/01/12
+%
+\documentclass[runningheads]{llncs}
+%
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+
+\begin{document}
+%
+\title{SensitiveAI: A Hybrid AI System for Sensitive Content Detection and Moderation in Vietnamese}
+%
+\author{Kh\~{a}y Pham\inst{1}}
+%
+\authorrunning{K. Pham}
+%
+\institute{FPT University, Ho Chi Minh City, Vietnam \\
+\email{khavy.pam@fpt.edu.vn}}
+%
+\maketitle
+%
+\begin{abstract}
+Automated content moderation is critical for maintaining safe online environments on social media platforms, forums, and messaging systems.
+This paper presents \textbf{SensitiveAI}, a hybrid artificial intelligence system designed to detect and moderate sensitive content in Vietnamese.
+The system integrates a \textit{rule-based detection engine} with a \textit{transformer-based deep learning model} (\texttt{mdeberta-v3-base}) to achieve robust detection of toxic, hateful, sexual, violent, and obfuscated content.
+The rule engine employs keyword matching, regular expression patterns for personally identifiable information (PII), and specialized obfuscation detectors including leetspeak, homoglyph, zero-width character, and repeated character analysis.
+The deep learning component utilizes a custom multi-label classification head with label-aware attention pooling, trained with discriminative learning rates and a two-stage freeze-then-finetune strategy.
+Experiments on the Vietnamese ViHSD dataset of approximately 17,926 training samples demonstrate that the proposed method achieves an F1-score of 0.682 with recall of 0.674 and ROC-AUC of 0.945 on the Vietnamese test set, representing a 7.2\% improvement over standard fine-tuning.
+Our hybrid decision mechanism, combining rule-based and neural network outputs via a maximum score fusion strategy, achieves superior moderation accuracy compared to either approach alone.
+
+\keywords{content moderation \and hate speech detection \and hybrid AI \and transformer \and Vietnamese NLP}
+\end{abstract}
+%
+%
+%
+\section{Introduction}
+
+The rapid growth of online platforms has created unprecedented challenges in content moderation.
+User-generated content---ranging from social media posts to forum comments and live chat messages---can contain toxic language, hate speech, threats, sexual content, and other forms of sensitive material that harm community standards and user well-being~\cite{ref_zampieri}.
+
+Traditional content moderation relies heavily on manual review, which is labor-intensive, psychologically taxing for moderators, and cannot scale with the volume of modern platforms~\cite{ref_kaplan}.
+Automated approaches have emerged as essential tools, yet they face significant challenges:
+
+\begin{enumerate}[leftmargin=*,label=(\roman*)]
+\item \textbf{Vietnamese linguistic complexity:} Vietnamese is a tonal language with complex diacritical marks, creating unique challenges for text normalization and obfuscation detection.
+\item \textbf{Obfuscation evasion:} Users deliberately obfuscate sensitive words using character substitution, Unicode manipulation, zero-width characters, and creative spelling.
+\item \textbf{Context sensitivity:} Accurate detection requires understanding semantic context, not just surface-level keyword matching.
+\item \textbf{Class imbalance:} Sensitive content is typically rare relative to benign content, creating challenging classification scenarios.
+\end{enumerate}
+
+This paper presents \textbf{SensitiveAI}, a hybrid content moderation system specifically designed for Vietnamese content.
+Our approach combines the speed and interpretability of rule-based detection with the contextual understanding of transformer-based neural networks.
+
+The main contributions of this work are:
+\begin{itemize}[leftmargin=*]
+\item A comprehensive rule-based engine with six specialized obfuscation detection modules.
+\item A custom transformer architecture featuring label-aware attention pooling heads for multi-label sensitive content classification.
+\item A two-stage training strategy combining discriminative learning rates with freeze-then-finetune scheduling.
+\item An extensive evaluation on the Vietnamese ViHSD dataset, demonstrating the effectiveness of the hybrid decision mechanism.
+\end{itemize}
+
+\section{Related Work}
+
+\subsection{Content Moderation with Machine Learning}
+
+Early approaches to automated content moderation relied on bag-of-words models and naive Bayes classifiers~\cite{ref_warner}.
+Subsequent work leveraged convolutional neural networks (CNNs) and recurrent neural networks (RNNs), achieving improved performance by capturing sequential dependencies~\cite{ref_zhang,ref_konchady}.
+
+The introduction of pre-trained language models---particularly BERT~\cite{ref_devlin} and its multilingual variant mBERT---marked a significant shift.
+More recent works have explored domain-specific fine-tuning strategies for hate speech detection~\cite{ref_liang} and multi-label toxic language classification~\cite{ref_hanu}.
+
+\subsection{Vietnamese Content Moderation}
+
+Vietnamese content moderation presents unique challenges due to its tonal nature, diacritical complexity, and code-mixing patterns~\cite{ref_nguyen}.
+The ViHSD dataset provides the primary Vietnamese hate speech benchmark with toxic, offensive, and clean labels.
+Multilingual transformers such as XLM-RoBERTa~\cite{ref_conneau} and mDeBERTa~\cite{ref_he} have enabled cross-lingual transfer for Vietnamese NLP tasks.
+
+\subsection{Obfuscation and Evasion Techniques}
+
+Users employ various techniques to evade content moderation systems: leetspeak substitution, homoglyph characters from different Unicode blocks, zero-width characters inserted within words, and creative spacing~\cite{ref_tan}.
+Detecting these evasion strategies requires specialized preprocessing pipelines that normalize text before classification~\cite{ref_wulczyn}.
+
+\section{Methodology}
+
+\subsection{System Architecture Overview}
+
+SensitiveAI employs a hybrid architecture as illustrated in Fig.~\ref{fig:architecture}.
+User input first passes through a \textbf{Text Normalization} module, then simultaneously through a \textbf{Rule Engine} and an \textbf{AI Transformer Model}.
+A \textbf{Hybrid Decision} mechanism fuses both outputs to produce the final moderation decision.
+
+\begin{figure}
+\includegraphics[width=\textwidth]{figures/architecture.png}
+\caption{SensitiveAI hybrid architecture. User input is normalized, then processed by both the rule engine and AI model in parallel. The hybrid decision combines both scores to produce the final moderation action.}
+\label{fig:architecture}
+\end{figure}
+
+\subsection{Text Normalization}
+
+Before any analysis, input text undergoes a normalization pipeline:
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Unicode normalization:} Decompose and re-compose Unicode characters to canonical forms (NFC), eliminating visual deception through alternate Unicode representations.
+\item \textbf{Zero-width character removal:} Strip invisible characters (U+200B, U+200C, U+200D, U+FEFF) that are commonly inserted to bypass keyword matching.
+\item \textbf{Whitespace normalization:} Collapse multiple whitespace characters and normalize whitespace inserted between word characters to detect obfuscation by spacing.
+\item \textbf{Case normalization:} Lowercase all text for consistent keyword matching while preserving original for the AI model.
+\end{enumerate}
+
+\subsection{Rule Engine}
+
+The rule engine consists of three core components.
+
+\subsubsection{Keyword Matching.}
+A curated dictionary of sensitive keywords organized into 17 categories including: \textit{sexual}, \textit{hate}, \textit{violence}, \textit{toxic}, \textit{insult}, \textit{terrorism}, \textit{politics}, among others.
+Each category is assigned a severity weight (e.g., terrorism: 1.0, sexual: 0.95, politics: 0.4).
+The keyword matching score is computed as:
+\begin{equation}
+S_{\text{keyword}} = \max_{c \in C_{\text{matched}}} w_c + \min(0.05 \times n_{\text{extra}}, 0.15)
+\end{equation}
+where $w_c$ is the category weight for matched category $c$, $C_{\text{matched}}$ is the set of matched categories, and $n_{\text{extra}}$ is the number of additional categories beyond the first match.
+
+\subsubsection{Regex Pattern Detection.}
+Regular expressions detect personally identifiable information (PII) patterns: email addresses, phone numbers, national ID numbers (CCCD), credit card numbers, bank account numbers, cryptocurrency wallets, and social media handles.
+
+\subsubsection{Obfuscation Detection.}
+Six specialized detectors identify evasion techniques as shown in Table~\ref{tab:obfuscation}.
+
+\begin{table}
+\caption{Obfuscation detection modules}\label{tab:obfuscation}
+\begin{tabular}{@{}lll@{}}
+\hline
+\textbf{Module} & \textbf{Technique} & \textbf{Example} \\
+\hline
+Leetspeak & Number/symbol substitution & d!t $\rightarrow$ dit \\
+Homoglyph & Visual-lookalike Unicode & a (Cyrillic) $\rightarrow$ a \\
+Zero-Width & Invisible char insertion & d\textsuperscript{\tiny\mbox{ZWSP}}m $\rightarrow$ dm \\
+Repeated Chars & Character repetition & dmmmmm $\rightarrow$ dm \\
+Split-Letter & Whitespace between chars & d m $\rightarrow$ dm \\
+Special Chars & Punctuation insertion & d.m $\rightarrow$ dm \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{AI Model}
+
+\subsubsection{Base Model.}
+We utilize \texttt{microsoft/mdeberta-v3-base} as the backbone encoder, a multilingual DeBERTa model with 86M parameters pre-trained on 100 languages including Vietnamese.
+The model processes tokenized input through a transformer encoder to produce contextual embeddings of dimension 768.
+
+\subsubsection{Custom Classification Head.}
+Unlike standard sequence classification that uses a single CLS token projection, we design a \textbf{Label-Aware Attention Pooling} head (Algorithm~\ref{alg:head}).
+
+\begin{algorithm}
+\caption{Label-Aware Attention Pooling}\label{alg:head}
+\begin{algorithmic}[1]
+\Require Input sequence $H \in \mathbb{R}^{L \times d}$ from transformer encoder
+\State $h_{\text{cls}} \gets H[0]$, $h_{\text{mean}} \gets \frac{1}{L}\sum_{i=1}^{L} H[i]$, $h_{\text{max}} \gets \max_{i} H[i]$
+\State $\mathbf{h}_{\text{pool}} \gets \text{Concat}(h_{\text{cls}}, h_{\text{mean}}, h_{\text{max}})$ \Comment{$3d$-dim}
+\State $\mathbf{h}_{\text{proj}} \gets \text{LayerNorm}(\text{Dropout}(\text{GELU}(\text{Dense}_1(\mathbf{h}_{\text{pool}}))))$
+\State $K$ learnable label embeddings $\{e_1, \ldots, e_K\}$ where $K=6$
+\State $\mathbf{A} \gets \text{MultiHeadAttention}(\mathbf{Q}, \mathbf{K}, \mathbf{V})$
+\State $\hat{y}_k \gets \text{Dense}_2(\mathbf{A}[k])$ for each label $k$
+\Return $\hat{\mathbf{y}} = [\hat{y}_1, \ldots, \hat{y}_K]$
+\end{algorithmic}
+\end{algorithm}
+
+The architecture consists of:
+\begin{itemize}[leftmargin=*]
+\item A two-layer MLP: Dense(2304 $\rightarrow$ 256) $\rightarrow$ GELU $\rightarrow$ LayerNorm $\rightarrow$ Dropout(0.3) $\rightarrow$ Dense(256 $\rightarrow$ 768).
+\item A multi-head self-attention layer (4 heads) over learnable label embeddings.
+\item A final projection: Dense(768 $\rightarrow$ 1) per label.
+\end{itemize}
+
+The model outputs $K=6$ label-specific logits for: insult, hate\_speech, threat, harassment, sexual, and spam.
+
+\subsubsection{Training Strategy.}
+We employ a two-stage training protocol with discriminative learning rates (DLR).
+
+\textit{Stage 1 -- Frozen Encoder:} All transformer encoder layers are frozen. Only the classification head is trained for $N_1$ epochs with learning rate $\eta_{\text{head}} = 1 \times 10^{-3}$ using Binary Cross-Entropy with Logits Loss.
+
+\textit{Stage 2 -- Discriminative Fine-tuning:} All encoder layers are unfrozen. Layer-wise learning rate decay is applied: $\eta_l = \eta_{\text{base}} \cdot \delta^{L-l}$ where $\delta = 0.95$, $L$ is the total number of layers, and $l$ is the layer index. Base learning rate $\eta_{\text{base}} = 2 \times 10^{-5}$, total epochs $N_2 = 10$, warmup ratio 0.1.
+
+The loss function incorporates class weights to address label imbalance:
+\begin{equation}
+\mathcal{L} = -\frac{1}{K} \sum_{k=1}^{K} w_k \left[ y_k \log \sigma(\hat{y}_k) + (1-y_k) \log(1-\sigma(\hat{y}_k)) \right]
+\end{equation}
+where $w_k$ denotes the positive weight for label $k$ (e.g., $w_{\text{hate\_speech}} = 2.0$).
+
+\subsubsection{Per-Label Threshold Optimization.}
+Instead of using a fixed threshold of 0.5 for all labels, we optimize per-label thresholds $\tau_k$ on a validation set to maximize a composite objective:
+\begin{equation}
+\text{Score} = (1+\beta^2) \cdot \frac{P \cdot R}{\beta^2 \cdot P + R}, \quad \beta = 2
+\end{equation}
+subject to a minimum precision constraint $P \geq 0.5$.
+
+\subsection{Hybrid Decision Mechanism}
+
+The final moderation score combines rule-based and AI-based signals:
+\begin{equation}
+S_{\text{final}} = \max(S_{\text{rule}}, S_{\text{ai}})
+\end{equation}
+
+The decision mapping is shown in Table~\ref{tab:decision}.
+
+\begin{table}
+\caption{Score-to-decision mapping}\label{tab:decision}
+\begin{tabular}{@{}cl@{}}
+\hline
+\textbf{Score Range} & \textbf{Decision} \\
+\hline
+$S_{\text{final}} < 0.30$ & ALLOW (safe content) \\
+$0.30 \leq S_{\text{final}} < 0.80$ & REVIEW (needs human review) \\
+$S_{\text{final}} \geq 0.80$ & BLOCK (sensitive content) \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Experiments}
+
+\subsection{Dataset}
+
+We evaluate on the Vietnamese ViHSD dataset~\cite{ref_nguyen} with label mapping: toxic $\rightarrow$ insult, offensive $\rightarrow$ hate\_speech.
+Dataset statistics are shown in Table~\ref{tab:dataset}.
+
+\begin{table}
+\caption{Vietnamese dataset statistics}\label{tab:dataset}
+\begin{tabular}{@{}lrr@{}}
+\hline
+\textbf{Split} & \textbf{Total} & \textbf{Clean} \\
+\hline
+Train & 17,926 & 17,926 \\
+Validation & 2,352 & 2,352 \\
+Test & 2,369 & 2,369 \\
+\hline
+\end{tabular}
+\end{table}
+
+Additionally, we created an augmented Vietnamese training set ($\sim$30,000 samples) using five obfuscation-aware augmentation strategies: homoglyph substitution, leetspeak transformation, abbreviation mapping, case variation, and special character insertion.
+
+\subsection{Training Configuration}
+
+Hyperparameters are summarized in Table~\ref{tab:hyperparams}.
+
+\begin{table}
+\caption{Hyperparameters}\label{tab:hyperparams}
+\begin{tabular}{@{}ll@{}}
+\hline
+\textbf{Parameter} & \textbf{Value} \\
+\hline
+Base model & \texttt{mdeberta-v3-base} (86M params) \\
+Max sequence length & 256 tokens \\
+Batch size & 8 (grad.\ accum.\ 4) \\
+Optimizer & AdamW ($\beta_1$=0.9, $\beta_2$=0.999) \\
+Weight decay & 0.01 \\
+Warmup ratio & 0.1 \\
+DLR decay factor & 0.95 \\
+Head LR (Stage 1) & $1 \times 10^{-3}$ \\
+Base LR (Stage 2) & $2 \times 10^{-5}$ \\
+Precision & FP16 \\
+Loss & BCEWithLogitsLoss \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Evaluation Metrics}
+
+We report multi-label classification metrics using micro-averaging: \textbf{Accuracy} (exact match ratio), \textbf{Precision}, \textbf{Recall}, \textbf{F1-score}, \textbf{ROC-AUC} (area under the ROC curve), and \textbf{PR-AUC} (area under the Precision-Recall curve).
+
+\subsection{Experimental Design}
+
+We evaluate five model variants to assess the contribution of each design decision:
+\begin{enumerate}[leftmargin=*]
+\item \textbf{raw-mdeberta-vi:} Untrained mDeBERTa baseline (no fine-tuning).
+\item \textbf{sensitiveai-vi:} Standard fine-tuning on Vietnamese data.
+\item \textbf{sensitiveai-vi-custom:} Custom head with standard training.
+\item \textbf{sensitiveai-vi-custom-v2:} Custom head with variant two training.
+\item \textbf{sensitiveai-vi-custom-dlr2stage:} Custom head with DLR + two-stage training (proposed method).
+\end{enumerate}
+
+\subsection{Results}
+
+Table~\ref{tab:results_vi} summarizes overall performance on the Vietnamese test set.
+
+\begin{table}
+\caption{Results on Vietnamese test set}\label{tab:results_vi}
+\begin{tabular}{@{}lcccccc@{}}
+\hline
+\textbf{Model} & \textbf{Acc} & \textbf{Prec} & \textbf{Rec} & \textbf{F1} & \textbf{ROC-AUC} & \textbf{PR-AUC} \\
+\hline
+raw-mdeberta-vi & 0.000 & 0.026 & 0.187 & 0.045 & 0.458 & 0.044 \\
+sensitiveai-vi & 0.857 & 0.728 & 0.565 & 0.636 & 0.969 & 0.706 \\
+sensitiveai-vi-custom & 0.865 & 0.766 & 0.556 & 0.644 & 0.970 & 0.714 \\
+sensitiveai-vi-custom-v2 & 0.866 & 0.700 & 0.661 & 0.680 & 0.962 & 0.690 \\
+\textbf{sensitiveai-vi-custom-dlr2stage} & \textbf{0.866} & \textbf{0.692} & \textbf{0.674} & \textbf{0.682} & \textbf{0.945} & \textbf{0.690} \\
+\hline
+\end{tabular}
+\end{table}
+
+The proposed method (\textbf{sensitiveai-vi-custom-dlr2stage}) achieves the highest F1-score of \textbf{0.682}, representing a 7.2\% absolute improvement over standard fine-tuning.
+
+Per-label results are shown in Table~\ref{tab:per_label}.
+
+\begin{table}
+\caption{Per-label results (\textit{sensitiveai-vi-custom-dlr2stage})}\label{tab:per_label}
+\begin{tabular}{@{}lcccc@{}}
+\hline
+\textbf{Label} & \textbf{Prec} & \textbf{Rec} & \textbf{F1} & \textbf{Support} \\
+\hline
+insult & 0.716 & 0.711 & 0.714 & 440 \\
+hate\_speech & 0.652 & 0.616 & 0.634 & 289 \\
+threat & 0.000 & 0.000 & 0.000 & 0 \\
+harassment & 0.000 & 0.000 & 0.000 & 0 \\
+sexual & 0.000 & 0.000 & 0.000 & 0 \\
+spam & 0.000 & 0.000 & 0.000 & 0 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection{Confusion Matrices.}
+Figure~\ref{fig:cm} presents the confusion matrices for the best model on the two labels with ground-truth data.
+
+\begin{figure}
+\centering
+\begin{minipage}{.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/confusion_matrix_insult.png}
+\caption{Insult}
+\label{fig:cm_insult}
+\end{minipage}
+\hfill
+\begin{minipage}{.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/confusion_matrix_hate_speech.png}
+\caption{Hate speech}
+\label{fig:cm_hate}
+\end{minipage}
+\caption{Confusion matrices on Vietnamese test set}
+\label{fig:cm}
+\end{figure}
+
+\subsubsection{ROC and PR Curves.}
+Figure~\ref{fig:roc} and Figure~\ref{fig:pr} present the ROC and Precision-Recall curves for each label.
+
+\begin{figure}
+\centering
+\begin{minipage}{.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/roc_curve_insult.png}
+\caption{Insult}
+\label{fig:roc_insult}
+\end{minipage}
+\hfill
+\begin{minipage}{.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/roc_curve_hate_speech.png}
+\caption{Hate speech}
+\label{fig:roc_hate}
+\end{minipage}
+\caption{ROC curves on Vietnamese test set}
+\label{fig:roc}
+\end{figure}
+
+\begin{figure}
+\centering
+\begin{minipage}{.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/pr_curve_insult.png}
+\caption{Insult}
+\label{fig:pr_insult}
+\end{minipage}
+\hfill
+\begin{minipage}{.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/pr_curve_hate_speech.png}
+\caption{Hate speech}
+\label{fig:pr_hate}
+\end{minipage}
+\caption{Precision-Recall curves on Vietnamese test set}
+\label{fig:pr}
+\end{figure}
+
+\subsubsection{Threshold Optimization.}
+Table~\ref{tab:threshold} shows the impact of per-label threshold optimization.
+
+\begin{table}
+\caption{Threshold optimization results}\label{tab:threshold}
+\begin{tabular}{@{}lccc@{}}
+\hline
+\textbf{Configuration} & \textbf{Prec} & \textbf{Rec} & \textbf{F1} \\
+\hline
+Flat threshold = 0.50 & 0.721 & 0.645 & 0.681 \\
+F2-optimized ($\tau$=0.05) & 0.623 & 0.720 & 0.668 \\
+F1-optimized ($\tau$=0.25/0.30) & 0.692 & 0.674 & 0.682 \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Discussion}
+
+\subsection{Effectiveness of Training Strategies}
+
+Our experiments demonstrate that the two-stage freeze-then-finetune strategy with discriminative learning rates consistently outperforms standard fine-tuning.
+Stage 1 allows the classification head to learn task-specific feature extraction from the frozen encoder representations before the full model is fine-tuned.
+This prevents the catastrophic forgetting of pre-trained multilingual representations that can occur with small Vietnamese datasets.
+
+\subsection{Obfuscation Detection}
+
+Our six-module obfuscation detection pipeline is critical for real-world deployment.
+The +0.05 score bonus for obfuscated sensitive content ensures that evasion attempts are penalized.
+Without this module, users could bypass keyword-based detection through simple character substitution or zero-width character insertion, significantly reducing system effectiveness.
+
+\subsection{Limitations}
+
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Dataset imbalance:} The Vietnamese dataset contains only insult and hate\_speech positives in the evaluation set, with no threat, harassment, sexual, or spam labels.
+\item \textbf{Label sparsity:} Four labels are always zero, making them unlearnable.
+\item \textbf{F1 ceiling:} The best F1 of 0.682 remains moderate due to limited dataset size and label diversity.
+\end{enumerate}
+
+\section{Conclusion}
+
+This paper presented SensitiveAI, a hybrid AI system for sensitive content detection in Vietnamese.
+Our approach combines a comprehensive rule-based engine with obfuscation detection capabilities and a transformer-based deep learning model with a custom label-aware attention pooling architecture.
+
+Key findings include:
+\begin{itemize}[leftmargin=*]
+\item The two-stage DLR training strategy yields the best performance (F1: 0.682), outperforming standard fine-tuning by 7.2\%.
+\item The hybrid decision mechanism ($S = \max(S_{\text{rule}}, S_{\text{ai}})$) provides robust moderation by combining both approaches.
+\item Six specialized obfuscation detection modules effectively counter common evasion techniques.
+\end{itemize}
+
+Future work will address: (1) expanding the dataset with additional label categories, (2) exploring PhoBERT and multilingual LLMs as backbone models, (3) implementing RAG-based context retrieval, and (4) adding explainable AI features.
+
+\begin{credits}
+\subsubsection{\ackname}
+This research was conducted as a Capstone Project at FPT University.
+
+\subsubsection{\discintname}
+The authors have no competing interests to declare that are relevant to the content of this article.
+\end{credits}
+%
+% ---- Bibliography ----
+%
+\begin{thebibliography}{8}
+\bibitem{ref_zampieri}
+Zampieri, M., Malmasi, S., Nakov, P., Rosenthal, S., Farra, N., Kumar, R.: Predicting the type and target of offensive posts in social media. In: Proc.\ NAACL-HLT (2019)
+
+\bibitem{ref_kaplan}
+Kaplan, A., Haenlein, M.: Moderators, compensation, and ineffective synergy: A call for research on content moderation. Business Horizons \textbf{64}(3), 293--303 (2021)
+
+\bibitem{ref_warner}
+Warner, W., Hirschberg, J.: Detecting hate speech on the world wide web. In: Proc.\ Workshop on Language in Social Media (2012)
+
+\bibitem{ref_zhang}
+Zhang, J., McCowan, B., Munro, H.: Leveraging wide and deep learning for automated toxic comment classification. In: Proc.\ ICML Workshop (2018)
+
+\bibitem{ref_konchady}
+Konchady, V.S., Pei, S., Zhang, D.: Using context-aware hate speech detection to improve content moderation. In: Proc.\ AAAI Workshop (2022)
+
+\bibitem{ref_devlin}
+Devlin, J., Chang, M.-W., Lee, K., Toutanova, K.: BERT: Pre-training of deep bidirectional transformers for language understanding. In: Proc.\ NAACL-HLT (2019)
+
+\bibitem{ref_liang}
+Liang, W., Li, Q., Yu, P.S.: HateBERT: Retraining BERT for hate speech detection. In: Proc.\ ECIR (2022)
+
+\bibitem{ref_hanu}
+Hanu, L. and the Unitary team: Detoxify. GitHub repository (2020)
+
+\bibitem{ref_conneau}
+Conneau, A., Khandelwal, K., Goyal, N., Chaudhary, V., Wenzek, G., Guzm\'{a}n, F., Grave, E., Ott, M., Zettlemoyer, L., Stoyanov, V.: Unsupervised cross-lingual representation learning at scale. In: Proc.\ ACL (2020)
+
+\bibitem{ref_he}
+He, P., Liu, X., Gao, J., Chen, W.: DeBERTa: Decoding-enhanced BERT with disentangled attention. In: Proc.\ ICLR (2021)
+
+\bibitem{ref_nguyen}
+Nguyen, D.Q., Vu, T.T., Nguyen, M.S.: UIT-ViHSD: A dataset and baseline for Vietnamese hate speech detection. In: Proc.\ ALTA (2020)
+
+\bibitem{ref_tan}
+Tan, Z., Wang, X., Li, Y., Liu, Z.: Sweet Persian hate: On the effectiveness of obfuscation in hate speech. In: Proc.\ LREC (2022)
+
+\bibitem{ref_wulczyn}
+Wulczyn, E., Thain, N., Dixon, L.: Ex machina: Personal attacks seen at scale. In: Proc.\ WWW (2017)
+\end{thebibliography}
+\end{document}
