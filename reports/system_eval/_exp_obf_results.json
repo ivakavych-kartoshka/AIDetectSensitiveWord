@@ -1,0 +1,50 @@
+{
+  "original": {
+    "rule": 190,
+    "ai_raw": 303,
+    "ai_norm": 314,
+    "n": 440
+  },
+  "homoglyph": {
+    "rule": 189,
+    "ai_raw": 303,
+    "ai_norm": 313,
+    "hybrid_rule_ai_raw": 342
+  },
+  "leetspeak": {
+    "rule": 190,
+    "ai_raw": 312,
+    "ai_norm": 314,
+    "hybrid_rule_ai_raw": 361
+  },
+  "abbreviation": {
+    "rule": 190,
+    "ai_raw": 303,
+    "ai_norm": 314,
+    "hybrid_rule_ai_raw": 344
+  },
+  "random_case": {
+    "rule": 190,
+    "ai_raw": 326,
+    "ai_norm": 314,
+    "hybrid_rule_ai_raw": 367
+  },
+  "special_chars": {
+    "rule": 190,
+    "ai_raw": 332,
+    "ai_norm": 314,
+    "hybrid_rule_ai_raw": 363
+  },
+  "zero_width": {
+    "rule": 190,
+    "ai_raw": 389,
+    "ai_norm": 314,
+    "hybrid_rule_ai_raw": 409
+  },
+  "combined_3": {
+    "rule": 190,
+    "ai_raw": 340,
+    "ai_norm": 314,
+    "hybrid_rule_ai_raw": 383
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "policy": "rule block>=0.90 review>=0.60; AI override block>=0.95 review>=0.80; max(rule, ai)",
+  "n": 2369,
+  "sensitive": 440,
+  "decisions": {
+    "allow": 1755,
+    "review": 209,
+    "block": 405
+  },
+  "sensitive_by_decision": {
+    "allow": 110,
+    "review": 54,
+    "block": 276
+  },
+  "missed_allow": 110
+}

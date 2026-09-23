@@ -1,0 +1,13 @@
+              precision    recall  f1-score   support
+
+      insult       0.19      1.00      0.31       440
+ hate_speech       0.34      0.31      0.32       289
+      threat       0.00      0.00      0.00         0
+  harassment       0.00      0.00      0.00         0
+      sexual       0.00      0.00      0.00         0
+        spam       0.00      0.00      0.00         0
+
+   micro avg       0.11      0.73      0.18       729
+   macro avg       0.09      0.22      0.11       729
+weighted avg       0.25      0.73      0.32       729
+ samples avg       0.10      0.14      0.11       729

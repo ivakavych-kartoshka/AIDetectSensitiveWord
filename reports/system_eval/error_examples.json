@@ -1,0 +1,86 @@
+{
+  "fn": [
+    {
+      "text": "có tiền vay ko đi giải phẫu cho thành con gái đi ròi nc ngừoi đàn bà có cây cà rem g giữa kkk co tien vay ko i giai phau cho thanh con gai i roi nc nguoi an ba co cay ca rem g giua kkk",
+      "insult_score": 0.001,
+      "hate_score": 0.0,
+      "hate_true": 1
+    },
+    {
+      "text": "tưởng k có tuổi vs vong ba gà tuong k co tuoi vs vong ba ga",
+      "insult_score": 0.002,
+      "hate_score": 0.0,
+      "hate_true": 1
+    },
+    {
+      "text": "nè ní m sai m cố chấp jo m xl à đào đất ngủ đi r nhận sự tha thứ ne ni m sai m co chap jo m xl a ao at ngu i r nhan su tha thu",
+      "insult_score": 0.002,
+      "hate_score": 0.0,
+      "hate_true": 1
+    },
+    {
+      "text": "moá quái thai moa quai thai",
+      "insult_score": 0.001,
+      "hate_score": 0.0,
+      "hate_true": 1
+    }
+  ],
+  "fp": [
+    {
+      "text": "nguyễn bình thì fan thích thì gọi v t cũng có gọi st là chủ tịch đéo đâu cơ mà fan ngta thích thì sao cấm đc nguyen binh thi fan thich thi goi v t cung co goi st la chu tich eo au co ma fan ngta thich thi sao cam c",
+      "insult_score": 0.974,
+      "hate_pred": 0
+    },
+    {
+      "text": "a ha chào cụ tiên sư trần mần hay mình khoái nghe hài của cụ coi chừng cụ nhé em ncov nó quặc vô là cụ đi đấy còn giờ này cụ chỉ có dương vật teo chứ sao mà cúm dơi cúm mèo đc a ha chao cu tien su tran man hay minh khoai nghe hai cua cu coi chung cu nhe em ncov no quac vo la cu i ay con gio nay cu chi co duong vat teo chu sao ma cum doi cum meo c",
+      "insult_score": 0.954,
+      "hate_pred": 1
+    },
+    {
+      "text": "abe dạo này nóng quá à hoong quạo nha abe số abe nó mở ra zị thôi chửi con cac nè abe abe dao nay nong qua a hoong quao nha abe so abe no mo ra zi thoi chui con cac ne abe",
+      "insult_score": 0.636,
+      "hate_pred": 1
+    },
+    {
+      "text": "cơ mà có vẻ sỉ nhục con cá vàng quá ad e co ma co ve si nhuc con ca vang qua ad e",
+      "insult_score": 0.992,
+      "hate_pred": 1
+    }
+  ],
+  "tp": [
+    {
+      "text": "tài bọn ranh con riết cứ như armu chán ghê ccc tai bon ranh con riet cu nhu armu chan ghe ccc",
+      "insult_score": 0.572
+    },
+    {
+      "text": "vậy chứ đại gia nó cũng quất láng lảm nhãm làm ji cũng đéo có tiền mua đâu vay chu ai gia no cung quat lang lam nham lam ji cung eo co tien mua au",
+      "insult_score": 0.906
+    },
+    {
+      "text": "ngu còn sủa cho lớn lúc đầu cũng mê việt kiều ngu con sua cho lon luc au cung me viet kieu",
+      "insult_score": 0.991
+    },
+    {
+      "text": "mvp con cac gì tầm này ccc mvp con cac gi tam nay ccc",
+      "insult_score": 0.988
+    }
+  ],
+  "hate_tp": [
+    {
+      "text": "ngu còn sủa cho lớn lúc đầu cũng mê việt kiều ngu con sua cho lon luc au cung me viet kieu",
+      "hate_score": 0.925
+    },
+    {
+      "text": "cái địt cụ nhà chúng nó việt nam nhiều giáo sư tiến sỹ nhất thế giới mà chẳng thằng lon nào hiểu chất độc nó là cái gì bọn bu lon ăn tục nói phét thôi cai it cu nha chung no viet nam nhieu giao su tien sy nhat the gioi ma chang thang lon nao hieu chat oc no la cai gi bon bu lon an tuc noi phet thoi",
+      "hate_score": 0.979
+    },
+    {
+      "text": "có con cac nè em c co con cac ne em c",
+      "hate_score": 0.955
+    },
+    {
+      "text": "sông cửu long thì bọn cẩu nó ngăn nước đầu nguồn giờ miền trung thì xả chất độc c chả có cái gì bọn cẩu này ko làm đc song cuu long thi bon cau no ngan nuoc au nguon gio mien trung thi xa chat oc c cha co cai gi bon cau nay ko lam c",
+      "hate_score": 0.872
+    }
+  ]
+}
